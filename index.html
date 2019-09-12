@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div id="app">
+    <v-app>
+      <v-content>
+          <v-container>This is the intro part</v-container>
+          <v-container>
+            <v-timeline :dense="$vuetify.breakpoint.smAndDown">
+                <v-timeline-item
+                    color="cyan lighten-2"
+                    fill-dot
+                    right
+                >
+                    <v-card>
+                        <v-card-title class="cyan lighten-2">
+                            <v-icon
+                                dark
+                                size="36"
+                            >mdi-alert-box-outline</v-icon>
+                            <h2 class="display-1 white--text font-weight-light">Define Problem Statement</h2>
+                        </v-card-title>
+                        <v-container>
+                            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.
+                        </v-container>
+                    </v-card>
+                </v-timeline-item>
+                
+                <v-timeline-item
+                    color="cyan lighten-2"
+                    fill-dot
+                    left
+                >
+                    <v-card>
+                        <v-card-title class="cyan lighten-2">
+                            <h2 class="display-1 white--text font-weight-light">Identify Target Audience</h2>
+                            <v-icon
+                                dark
+                                size="36"
+                            >mdi-account-group-outline</v-icon>
+                        </v-card-title>
+                        <v-container>
+                            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.
+                        </v-container>
+                    </v-card>
+                </v-timeline-item>
+
+                <v-timeline-item
+                    color="cyan lighten-2"
+                    fill-dot
+                    right
+                >
+                    <v-card>
+                        <v-card-title class="cyan lighten-2">
+                            <v-icon
+                                dark
+                                size="42"
+                            >mdi-check-circle-outline</v-icon>
+                            <h2 class="display-1 white--text font-weight-light">Propose Solution</h2>
+                        </v-card-title>
+                        <v-container>
+                            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.
+                        </v-container>
+                    </v-card>
+                </v-timeline-item>
+            </v-timeline>
+          </v-container>
+          <v-container>
+              <h1>Our Team</h1>
+              <v-container>
+                  <v-row :align="center">
+                    <v-col>
+                        <v-avatar
+                            class="profile"
+                            color="grey"
+                            size="164"
+                        >
+                            <v-img src="images/manjul.jpg"></v-img>
+                        </v-avatar>
+                        <v-list-item>
+                            <v-list-item-content>
+                                <v-list-item-title class="title">Manjul Sachan</v-list-item-title>
+                            </v-list-item-content>
+                        </v-list-item>
+                    </v-col>
+                    <v-col>
+                        <v-avatar
+                            class="profile"
+                            color="grey"
+                            size="164"
+                        >
+                            <v-img src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"></v-img>
+                        </v-avatar>
+                        <v-list-item>
+                            <v-list-item-content>
+                                <v-list-item-title class="title">Marcus Obrien</v-list-item-title>
+                            </v-list-item-content>
+                        </v-list-item>
+                    </v-col>
+                    <v-col>
+                        <v-avatar
+                            class="profile"
+                            color="grey"
+                            size="164"
+                        >
+                            <v-img src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"></v-img>
+                        </v-avatar>
+                        <v-list-item>
+                            <v-list-item-content>
+                                <v-list-item-title class="title">Marcus Obrien</v-list-item-title>
+                            </v-list-item-content>
+                        </v-list-item>
+                    </v-col>
+                  </v-row>
+              </v-container>
+          </v-container>
+      </v-content>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+    })
+  </script>
+</body>
+</html>
