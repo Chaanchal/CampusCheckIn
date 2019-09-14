@@ -10,7 +10,15 @@
   <div id="app">
     <v-app>
       <v-content>
-          <v-container>This is the intro part</v-container>
+          <v-container>
+            <v-parallax
+                height="300"
+                src="images/issParallax.jpg"
+                >
+                <h1 class="display-3 font-weight-thin mb-4">Hello!</h1>
+                <h4 class="display-1 font-weight-thin mb-4">This is a project website for the course of Information and Interaction Design</h4>
+                </v-parallax>
+          </v-container>
           <v-container>
             <v-timeline :dense="$vuetify.breakpoint.smAndDown">
                 <v-timeline-item
@@ -27,7 +35,7 @@
                             <h2 class="display-1 white--text font-weight-light">Define Problem Statement</h2>
                         </v-card-title>
                         <v-container>
-                            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.
+                            The various information that are needed for the international students, when they join RIT, are found in different places but they are not well structured. There is no single place or single platform to gather the information that is required by the international students.
                         </v-container>
                     </v-card>
                 </v-timeline-item>
@@ -46,7 +54,7 @@
                             >mdi-account-group-outline</v-icon>
                         </v-card-title>
                         <v-container>
-                            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.
+                            The target audience for our project are the international students at RIT, both new and existing.
                         </v-container>
                     </v-card>
                 </v-timeline-item>
@@ -65,7 +73,7 @@
                             <h2 class="display-1 white--text font-weight-light">Propose Solution</h2>
                         </v-card-title>
                         <v-container>
-                            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.
+                            The main idea of this project is to develop an application to gather all the information that are required for incoming international students and then organize it and help the students in a step by step manner.
                         </v-container>
                     </v-card>
                 </v-timeline-item>
@@ -81,7 +89,7 @@
                             color="grey"
                             size="164"
                         >
-                            <v-img src="images/andre.jpg"></v-img>
+                            <v-img src="images/andre.jpeg"></v-img>
                         </v-avatar>
                         <v-list-item>
                             <v-list-item-content>
