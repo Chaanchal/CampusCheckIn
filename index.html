@@ -20,70 +20,153 @@
                 height="300"
                 src="images/issParallax.jpg"
                 >
-                <h1 class="display-3 font-weight-black mb-4 text-center">Hi There!</h1>
-                <h4 class="display-1 font-weight-medium mb-4 text-center">This is a project website for the course of Information and Interaction Design</h4>
+                <h1 class="display-3 font-weight-thin mb-4 text-center">Campus CheckIn</h1>
+                <h4 class="display-1 font-weight-light mb-4 text-center">Project for HCIN-620: Information and Interaction Design</h4>
             </v-parallax>
           </v-container>
           <v-container>
             <h1 class="display-2 font-weight-light text-center mb-4">Project Timeline</h1>
-            <v-timeline :dense="$vuetify.breakpoint.smAndDown">
-                <v-timeline-item
+            <v-stepper non-linear>
+                <v-stepper-header>
+                    <v-stepper-step
+                    editable
+                    step="1"
                     color="cyan lighten-2"
-                    fill-dot
-                    right
-                >
-                    <v-card>
-                        <v-card-title class="cyan lighten-2">
-                            <v-icon
-                                dark
-                                size="36"
-                            >mdi-alert-box-outline</v-icon>
-                            <h2 class="display-1 white--text font-weight-light">Define Problem Statement</h2>
-                        </v-card-title>
-                        <v-container>
-                            The various information that are needed for the international students, when they join RIT, are found in different places but they are not well structured. There is no single place or single platform to gather the information that is required by the international students.
-                        </v-container>
-                    </v-card>
-                </v-timeline-item>
-                
-                <v-timeline-item
+                    >
+                    Milestone
+                    </v-stepper-step>
+            
+                    <v-divider></v-divider>
+            
+                    <v-stepper-step
+                    editable
+                    step="2"
                     color="cyan lighten-2"
-                    fill-dot
-                    left
-                >
-                    <v-card>
-                        <v-card-title class="cyan lighten-2">
-                            <h2 class="display-1 white--text font-weight-light">Identify Target Audience</h2>
-                            <v-icon
-                                dark
-                                size="36"
-                            >mdi-account-group-outline</v-icon>
-                        </v-card-title>
-                        <v-container>
-                            The target audience for our project are the international students at RIT, both new and existing.
-                        </v-container>
-                    </v-card>
-                </v-timeline-item>
+                    >
+                    Milestone
+                    </v-stepper-step>
+            
+                    <v-divider></v-divider>
+            
+                    <v-stepper-step
+                    step="3"
+                    editable
+                    color="cyan lighten-2"
+                    >
+                    Milestone
+                    </v-stepper-step>
 
-                <v-timeline-item
+                    <v-divider></v-divider>
+            
+                    <v-stepper-step
+                    step="4"
+                    editable
                     color="cyan lighten-2"
-                    fill-dot
-                    right
-                >
-                    <v-card>
-                        <v-card-title class="cyan lighten-2">
-                            <v-icon
-                                dark
-                                size="42"
-                            >mdi-check-circle-outline</v-icon>
-                            <h2 class="display-1 white--text font-weight-light">Propose Solution</h2>
-                        </v-card-title>
-                        <v-container>
-                            The main idea of this project is to develop an application to gather all the information that are required for incoming international students and then organize it and help the students in a step by step manner.
-                        </v-container>
-                    </v-card>
-                </v-timeline-item>
-            </v-timeline>
+                    >
+                    Milestone
+                    </v-stepper-step>
+
+                    <v-divider></v-divider>
+            
+                    <v-stepper-step
+                    step="5"
+                    editable
+                    color="cyan lighten-2"
+                    >
+                    Milestone
+                    </v-stepper-step>
+                </v-stepper-header>
+
+                <v-stepper-items>
+                    <v-stepper-content
+                        :step="1"
+                    >
+                        <v-card>
+                            <v-container>
+                                <h1 class="headline font-weight-bold mb-2">Target Audience</h1>
+                                <p class="ml-4 mb-4">New and returning RIT Students</p>
+
+                                <h1 class="headline font-weight-bold mb-2">Stakeholders</h1>
+                                <p class="ml-4 mb-4">
+                                    <ul style="list-style-type: disc;">
+                                        <li>RIT Management</li>
+                                        <ul style="list-style-type: circle;">
+                                            <li>Faculty</li>
+                                            <li>Administration</li>
+                                        </ul>
+                                        <li>RIT Students</li>
+                                        <ul style="list-style-type: circle;">
+                                            <li>New students</li>
+                                            <ul style="list-style-type: square;">
+                                                <li>International</li>
+                                                <li>Local residents</li>
+                                            </ul>
+                                            <li>Returning students</li>
+                                        </ul>
+                                        <li>Designers</li>
+                                        <li>Developers</li>
+                                    </ul>                         
+                                </p>
+
+                                <h1 class="headline font-weight-bold mb-2">Problem Statement</h1>
+                                <p class="ml-4 mb-4">
+                                    The various information available to students of RIT are not well structured and delivered effectively. There is no single platform to gather this information required by the students and this leads to the student been overwhelmed and usually confused or miss important steps that require their attention.
+                                </p>
+
+                                <h1 class="headline font-weight-bold mb-2">Direction of a solution</h1>
+                                <p class="ml-4 mb-4">
+                                    <ul style="list-style-type: disc">
+                                        <li>Identify and gather information required by the students</li>
+                                        <li>Present information in a structured manner</li>
+                                        <ul style="list-style-type: circle;">
+                                            <li>Present the information in a card-based interface</li>
+                                            <li>Categorize information into relevant groups</li>
+                                            <li>Keep a check on the progress of checklist items</li>
+                                        </ul>
+                                        <li>Provide notification through push notification, text messages, and emails for effective communication</li>
+                                    </ul>
+                                </p>
+                            </v-container>
+                        </v-card>
+                    </v-stepper-content>
+                    <v-stepper-content
+                        :step="2"
+                    >
+                        <v-card>
+                            <v-container>
+                               Coming Soon...
+                            </v-container>
+                        </v-card>
+                    </v-stepper-content>
+                    <v-stepper-content
+                        :step="3"
+                    >
+                        <v-card>
+                            <v-container>
+                               Coming Soon...
+                            </v-container>
+                        </v-card>
+                    </v-stepper-content>
+                    <v-stepper-content
+                        :step="4"
+                    >
+                        <v-card>
+                            <v-container>
+                               Coming Soon...
+                            </v-container>
+                        </v-card>
+                    </v-stepper-content>
+                    <v-stepper-content
+                        :step="5"
+                    >
+                        <v-card>
+                            <v-container>
+                               Coming Soon...
+                            </v-container>
+                        </v-card>
+                    </v-stepper-content>
+                </v-stepper-items>
+            </v-stepper>
           </v-container>
           <v-container>
               <h1 class="display-2 font-weight-light text-center">Our Team</h1>
