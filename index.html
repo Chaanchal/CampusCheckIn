@@ -2,12 +2,17 @@
 <html>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <style>
       .v-parallax__content {
         background-color: #0000008a;
+      }
+
+      .font_montserrat {
+        font-family: 'Montserrat';
       }
   </style>
 </head>
@@ -396,8 +401,109 @@
                         :step="3"
                     >
                         <v-card>
-                            <v-container>
-                               Coming Soon...
+                            <v-container class="font_montserrat">
+                                <v-card
+                                class="mx-auto"
+                                width="800"
+                                height="380"
+                                style="
+                                    background: rgb(46, 5, 145);
+                                    background: -webkit-linear-gradient(to bottom, rgb(165, 154, 255), rgb(46, 5, 145));
+                                    background: linear-gradient(to bottom, rgb(165, 154, 255), rgb(46, 5, 145))"
+                                >
+                                  <v-row>
+                                    <v-col class="pt-0" cols="4">
+                                        <v-row>
+                                            <v-col class="pt-1 pl-6">
+                                                <v-avatar
+                                                    color="white"
+                                                    size="220"
+                                                    style="box-shadow: 0px 6px 10px black;"
+                                                >
+                                                    <v-img src="images/yang.jpg" position="right" max-width="200" max-height="200"></v-img>
+                                                </v-avatar>
+                                            </v-col>
+                                        </v-row>
+
+                                        <v-row align="center">
+                                            <v-col class="pt-0">
+                                                <h1 class=" font-weight-regular white--text text-center mb-1" style="text-shadow: 0px 3px 2px black;">Yang Zheng</h1>
+                                                <p class=" caption white--text text-center">Male, 25 <br/> Rochester Institute of Technology <br/> MS in Computer Engineering <br/> Country: China</p>
+                                            </v-col>
+                                        </v-row>
+                                    </v-col>
+                                    <v-col
+                                        class="pt-6 pr-7"
+                                        cols="8"
+                                    >
+                                        <h3 class="white--text  text-uppercase">About</h3>
+                                        <p class="white--text  text-justify" style="font-size: 10px;">
+                                            Yang Zheng is a graduate student from China. He worked as a software developer 
+                                            before coming to RIT for his master’s degree. He really appreciates well documented 
+                                            information and finds too many emails annoying. He has applied filters to sift 
+                                            through the hoard of emails to just get the important ones and because of this he 
+                                            sometimes misses important information which gets filtered out. He regularly visits 
+                                            the RIT website and finds it easy to navigate.
+                                        </p>
+                                        <v-row class="ma-n3">
+                                            <v-col cols="4">
+                                                <h4 class="white--text ">End Goals</h4>
+                                                <p class="white--text " style="font-size: 10px;">
+                                                    &bull; Access Information easily <br/>
+                                                    &bull; Access information on the go <br/>
+                                                    &bull; Find information in a single space <br/>
+                                                    &bull; Track progress <br/>
+                                                </p>
+                                            </v-col>
+                                            <v-col cols="4">
+                                                <h4 class="white--text ">Experience Goals</h4>
+                                                <p class="white--text " style="font-size: 10px;">
+                                                    &bull; Feel in control <br/>
+                                                    &bull; Access on different platforms <br/>
+                                                    &bull; Minimize point of contacts <br/>
+                                                </p>
+                                            </v-col>
+                                            <v-col cols="4">
+                                                <h4 class="white--text ">Life Goals</h4>
+                                                <p class="white--text " style="font-size: 10px;">
+                                                    &bull; Finish school with good grades <br/>
+                                                    &bull; Get a good job <br/>
+                                                    &bull; Be successful in life <br/>
+                                                </p>
+                                            </v-col>
+                                        </v-row>
+                                        <v-row class="ma-n4">
+                                            <v-col cols="3" style="line-height: 18px;">
+                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly value=6 size="10px"></v-rating>
+                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly value=7 size="10px"></v-rating>
+                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly value=5 size="10px"></v-rating>
+                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly value=3 size="10px"></v-rating>
+                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly value=4 size="10px"></v-rating>
+                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly value=2 size="10px"></v-rating>
+                                            </v-col>
+                                            <v-col cols="3" class="ml-n6">
+                                                <p class="white--text" style="font-size: 10px; line-height: 18px;">
+                                                    Social Media <br/>
+                                                    Website Access <br/>
+                                                    Phone Usage <br/>
+                                                    Email Usage <br/>
+                                                    Communication Skills <br/>
+                                                    Organization Skills <br/>
+                                                </p>
+                                            </v-col>
+                                            <v-col cols="6">
+                                                <h4 class="white--text ">Pain Points</h4>
+                                                <p class="white--text " style="font-size: 10px;">
+                                                    &bull; Scattered information <br/>
+                                                    &bull; Constantly bombarded with information <br/>
+                                                    &bull; Don't know the right channel to access 
+                                                    information <br/>
+                                                </p>
+                                            </v-col>
+                                        </v-row>
+                                    </v-col>
+                                  </v-row>
+                              </v-card>
                             </v-container>
                         </v-card>
                     </v-stepper-content>
