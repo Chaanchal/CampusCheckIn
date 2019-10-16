@@ -1,900 +1,1117 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-  <style>
-      .v-parallax__content {
-        background-color: #0000008a;
-      }
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+	<style>
+			.v-parallax__content {
+				background-color: #0000008a;
+			}
 
-      .font_montserrat {
-        font-family: 'Montserrat';
-      }
-  </style>
+			.font_montserrat {
+				font-family: 'Montserrat';
+			}
+	</style>
 </head>
 <body>
-  <div id="app">
-    <v-app>
-      <v-content>
-          <v-container>
-            <v-parallax
-                height="300"
-                src="images/issParallax.jpg"
-                >
-                <h1 class="display-3 font-weight-thin mb-4 text-center">Campus CheckIn</h1>
-                <h4 class="display-1 font-weight-light mb-4 text-center">Project for HCIN-620: Information and Interaction Design</h4>
-            </v-parallax>
-          </v-container>
-          <v-container>
-            <h1 class="display-2 font-weight-light text-center mb-4">Project Timeline</h1>
-            <v-stepper non-linear>
-                <v-stepper-header>
-                    <v-stepper-step
-                    editable
-                    step="1"
-                    color="cyan lighten-2"
-                    >
-                    Milestone
-                    </v-stepper-step>
-            
-                    <v-divider></v-divider>
-            
-                    <v-stepper-step
-                    editable
-                    step="2"
-                    color="cyan lighten-2"
-                    >
-                    Milestone
-                    </v-stepper-step>
-            
-                    <v-divider></v-divider>
-            
-                    <v-stepper-step
-                    step="3"
-                    editable
-                    color="cyan lighten-2"
-                    >
-                    Milestone
-                    </v-stepper-step>
+	<div id="app">
+		<v-app>
+			<v-content>
+					<v-container>
+						<v-parallax
+								height="300"
+								src="images/issParallax.jpg"
+								>
+								<h1 class="display-3 font-weight-thin mb-4 text-center">Campus CheckIn</h1>
+								<h4 class="display-1 font-weight-light mb-4 text-center">Project for HCIN-620: Information and Interaction Design</h4>
+						</v-parallax>
+					</v-container>
+					<v-container>
+						<h1 class="display-2 font-weight-light text-center mb-4">Project Timeline</h1>
+						<v-stepper non-linear>
+								<v-stepper-header>
+										<v-stepper-step
+										editable
+										step="1"
+										color="cyan lighten-2"
+										>
+										Milestone
+										</v-stepper-step>
+						
+										<v-divider></v-divider>
+						
+										<v-stepper-step
+										editable
+										step="2"
+										color="cyan lighten-2"
+										>
+										Milestone
+										</v-stepper-step>
+						
+										<v-divider></v-divider>
+						
+										<v-stepper-step
+										step="3"
+										editable
+										color="cyan lighten-2"
+										>
+										Milestone
+										</v-stepper-step>
 
-                    <v-divider></v-divider>
-            
-                    <v-stepper-step
-                    step="4"
-                    editable
-                    color="cyan lighten-2"
-                    >
-                    Milestone
-                    </v-stepper-step>
+										<v-divider></v-divider>
+						
+										<v-stepper-step
+										step="4"
+										editable
+										color="cyan lighten-2"
+										>
+										Milestone
+										</v-stepper-step>
 
-                    <v-divider></v-divider>
-            
-                    <v-stepper-step
-                    step="5"
-                    editable
-                    color="cyan lighten-2"
-                    >
-                    Milestone
-                    </v-stepper-step>
-                </v-stepper-header>
+										<v-divider></v-divider>
+						
+										<v-stepper-step
+										step="5"
+										editable
+										color="cyan lighten-2"
+										>
+										Milestone
+										</v-stepper-step>
+								</v-stepper-header>
 
-                <v-stepper-items>
-                    <v-stepper-content
-                        :step="1"
-                    >
-                        <v-card>
-                            <v-container>
-                                <h1 class="display-1 font-weight-medium mb-4 text-center">Project Focus</h1>
+								<v-stepper-items>
+										<v-stepper-content
+												:step="1"
+										>
+												<v-card>
+														<v-container>
+																<h1 class="display-1 font-weight-medium mb-4 text-center">Project Focus</h1>
 
-                                <h1 class="headline font-weight-bold mb-2">Target Audience</h1>
-                                <p class="ml-4 mb-4">New and returning RIT Students</p>
+																<h1 class="headline font-weight-bold mb-2">Target Audience</h1>
+																<p class="ml-4 mb-4">New and returning RIT Students</p>
 
-                                <h1 class="headline font-weight-bold mb-2">Stakeholders</h1>
-                                <div class="ml-4 mb-2">
-                                    <ul style="list-style-type: disc;">
-                                        <li>RIT Management</li>
-                                        <ul style="list-style-type: circle;">
-                                            <li>Faculty</li>
-                                            <li>Administration</li>
-                                        </ul>
-                                        <li>RIT Students</li>
-                                        <ul style="list-style-type: circle;">
-                                            <li>New students</li>
-                                            <ul style="list-style-type: square;">
-                                                <li>International</li>
-                                                <li>Local residents</li>
-                                            </ul>
-                                            <li>Returning students</li>
-                                        </ul>
-                                        <li>Designers</li>
-                                        <li>Developers</li>
-                                    </ul>
-                                </div>
-                                <div class="ml-4 mb-2">
-                                    <p class="title font-weight-medium mb-2">What the stakeholders want:</p>
-                                    <ul style="list-style-type: disc;">
-                                        <li>Students want accurate information to be accessible in a single space</li>
-                                        <li>Students want information in a structured manner</li>
-                                        <li>Students want to keep a progress check on information receieved</li>
-                                        <li>RIT administration wants to provide information required by the students</li>
-                                        <li>RIT administration wants to provide structured information to students in a timely manner</li>
-                                    </ul>
-                                </div>
-                                <div class="ml-4 mb-2">
-                                    <p class="title font-weight-medium mb-2">What problems they face:</p>
-                                    <ul style="list-style-type: disc;">
-                                        <li>Students are overwhelmed with the various information channels that exist</li>
-                                        <li>Students cannot keep track of the required steps to be carried before and after arriving on campus</li>
-                                        <li>RIT administration worry that information is not dispersed effectively to the students in a timely manner</li>
-                                    </ul>
-                                </div>
-                                <div class="ml-4 mb-2">
-                                    <p class="title font-weight-medium mb-2">What they propose:</p>
-                                    <ul style="list-style-type: disc;">
-                                        <li>A universally accessible portal for information for all RIT students</li>
-                                        <li>Receiving information in a timely manner through push notification, text messages, and emails</li>
-                                    </ul>
-                                </div>
-                                <div class="ml-4 mb-2">
-                                    <p class="title font-weight-medium mb-2">How to involve the stakeholders:</p>
-                                    <ul style="list-style-type: disc;">
-                                        <li>Building Prototypes and sharing with stakeholders to get feedback on improvements</li>
-                                    </ul>
-                                </div>
-                                <div class="ml-4 mb-2">
-                                    <p class="title font-weight-medium mb-2">How to communicate progress:</p>
-                                    <ul style="list-style-type: disc;">
-                                        <li>Updating the project website to act as a medium for communicating the project progress</li>
-                                    </ul>
-                                </div>
-                                <div class="ml-4 mb-2">
-                                    <p class="title font-weight-medium mb-2">How to understand their way of communication:</p>
-                                    <ul style="list-style-type: disc;">
-                                        <li>Performing interviews to get qualitative data</li>
-                                        <li>Performing surveys to get quantitative data</li>
-                                        <li>Organizing focus groups to get deep insight to understand important issues they face</li>
-                                    </ul>
-                                </div>
-                                <div class="ml-4 mb-4">
-                                    <p class="title font-weight-medium mb-2">How to communicate the design to them:</p>
-                                    <ul style="list-style-type: disc;">
-                                        <li>Conducting a usability test and involving the stakeholders in the design phase</li>
-                                    </ul>
-                                </div>
+																<h1 class="headline font-weight-bold mb-2">Stakeholders</h1>
+																<div class="ml-4 mb-2">
+																		<ul style="list-style-type: disc;">
+																				<li>RIT Management</li>
+																				<ul style="list-style-type: circle;">
+																						<li>Faculty</li>
+																						<li>Administration</li>
+																				</ul>
+																				<li>RIT Students</li>
+																				<ul style="list-style-type: circle;">
+																						<li>New students</li>
+																						<ul style="list-style-type: square;">
+																								<li>International</li>
+																								<li>Local residents</li>
+																						</ul>
+																						<li>Returning students</li>
+																				</ul>
+																				<li>Designers</li>
+																				<li>Developers</li>
+																		</ul>
+																</div>
+																<div class="ml-4 mb-2">
+																		<p class="title font-weight-medium mb-2">What the stakeholders want:</p>
+																		<ul style="list-style-type: disc;">
+																				<li>Students want accurate information to be accessible in a single space</li>
+																				<li>Students want information in a structured manner</li>
+																				<li>Students want to keep a progress check on information receieved</li>
+																				<li>RIT administration wants to provide information required by the students</li>
+																				<li>RIT administration wants to provide structured information to students in a timely manner</li>
+																		</ul>
+																</div>
+																<div class="ml-4 mb-2">
+																		<p class="title font-weight-medium mb-2">What problems they face:</p>
+																		<ul style="list-style-type: disc;">
+																				<li>Students are overwhelmed with the various information channels that exist</li>
+																				<li>Students cannot keep track of the required steps to be carried before and after arriving on campus</li>
+																				<li>RIT administration worry that information is not dispersed effectively to the students in a timely manner</li>
+																		</ul>
+																</div>
+																<div class="ml-4 mb-2">
+																		<p class="title font-weight-medium mb-2">What they propose:</p>
+																		<ul style="list-style-type: disc;">
+																				<li>A universally accessible portal for information for all RIT students</li>
+																				<li>Receiving information in a timely manner through push notification, text messages, and emails</li>
+																		</ul>
+																</div>
+																<div class="ml-4 mb-2">
+																		<p class="title font-weight-medium mb-2">How to involve the stakeholders:</p>
+																		<ul style="list-style-type: disc;">
+																				<li>Building Prototypes and sharing with stakeholders to get feedback on improvements</li>
+																		</ul>
+																</div>
+																<div class="ml-4 mb-2">
+																		<p class="title font-weight-medium mb-2">How to communicate progress:</p>
+																		<ul style="list-style-type: disc;">
+																				<li>Updating the project website to act as a medium for communicating the project progress</li>
+																		</ul>
+																</div>
+																<div class="ml-4 mb-2">
+																		<p class="title font-weight-medium mb-2">How to understand their way of communication:</p>
+																		<ul style="list-style-type: disc;">
+																				<li>Performing interviews to get qualitative data</li>
+																				<li>Performing surveys to get quantitative data</li>
+																				<li>Organizing focus groups to get deep insight to understand important issues they face</li>
+																		</ul>
+																</div>
+																<div class="ml-4 mb-4">
+																		<p class="title font-weight-medium mb-2">How to communicate the design to them:</p>
+																		<ul style="list-style-type: disc;">
+																				<li>Conducting a usability test and involving the stakeholders in the design phase</li>
+																		</ul>
+																</div>
 
-                                <h1 class="headline font-weight-bold mb-2">Problem Statement</h1>
-                                <p class="ml-4 mb-4">
-                                    <ul style="list-style-type: disc;">
-                                        <li>The resources required by the new and returning students of RIT are made available to them by the different departments through their individual websites.</li>
-                                        <li>The information, even though available, is not well structured and the students must know what to search for to find that piece of information.</li>
-                                        <li>The students recieve a lot of information from different sources, which becomes overwhelmingly large in number and it becomes difficult to keep track of them, which eventually leads to them missing important communications.</li>
-                                    </ul>
-                                </p>
+																<h1 class="headline font-weight-bold mb-2">Problem Statement</h1>
+																<p class="ml-4 mb-4">
+																		<ul style="list-style-type: disc;">
+																				<li>The resources required by the new and returning students of RIT are made available to them by the different departments through their individual websites.</li>
+																				<li>The information, even though available, is not well structured and the students must know what to search for to find that piece of information.</li>
+																				<li>The students recieve a lot of information from different sources, which becomes overwhelmingly large in number and it becomes difficult to keep track of them, which eventually leads to them missing important communications.</li>
+																		</ul>
+																</p>
 
-                                <h1 class="headline font-weight-bold mb-2">Direction for a solution</h1>
-                                <p class="ml-4 mb-4">
-                                    <ul style="list-style-type: disc">
-                                        <li>Identify and gather information required by the students</li>
-                                        <li>Present information in a structured manner</li>
-                                        <ul style="list-style-type: circle;">
-                                            <li>Present the information in a card-based interface</li>
-                                            <li>Categorize information into relevant groups</li>
-                                            <li>Keep a check on the progress of checklist items</li>
-                                        </ul>
-                                        <li>Provide notification through push notification, text messages, and emails for effective communication</li>
-                                    </ul>
-                                </p>
-                            </v-container>
-                        </v-card>
-                    </v-stepper-content>
-                    <v-stepper-content
-                        :step="2"
-                    >
-                    <v-card>
-                        <v-container>
-                            <h1 class="display-1 font-weight-medium mb-4 text-center">Contextual Inquiry</h1>
+																<h1 class="headline font-weight-bold mb-2">Direction for a solution</h1>
+																<p class="ml-4 mb-4">
+																		<ul style="list-style-type: disc">
+																				<li>Identify and gather information required by the students</li>
+																				<li>Present information in a structured manner</li>
+																				<ul style="list-style-type: circle;">
+																						<li>Present the information in a card-based interface</li>
+																						<li>Categorize information into relevant groups</li>
+																						<li>Keep a check on the progress of checklist items</li>
+																				</ul>
+																				<li>Provide notification through push notification, text messages, and emails for effective communication</li>
+																		</ul>
+																</p>
+														</v-container>
+												</v-card>
+										</v-stepper-content>
+										<v-stepper-content
+												:step="2"
+										>
+										<v-card>
+												<v-container>
+														<h1 class="display-1 font-weight-medium mb-4 text-center">Contextual Inquiry</h1>
 
-                            <h1 class="headline font-weight-bold mb-2">Interview Demographics</h1>
-                            <div class="ml-4 mb-2">
-                                <p>For our contextual inquiry we conducted interviews within the following demographics:</p>
-                                <ul style="list-style-type: disc;">
-                                    <li>5 RIT students (on-campus & off-campus)</li>
-                                    <ul style="list-style-type: circle;">
-                                        <li>3 International Graduate students</li>
-                                        <li>1 International Undergraduate student</li>
-                                        <li>1 American citizen Graduate student</li>
-                                    </ul>
-                                    <li>3 Administrative staff</li>
-                                    <ul style="list-style-type: circle;">
-                                        <li>1 Academic Advisor from GCCIS</li>
-                                        <li>1 Counselor from International Student Services Office</li>
-                                        <li>1 Counselor from the office of Graduate Admissions Office</li>
-                                    </ul>
-                                </ul>
-                            </div>
+														<h1 class="headline font-weight-bold mb-2">Interview Demographics</h1>
+														<div class="ml-4 mb-2">
+																<p>For our contextual inquiry we conducted interviews within the following demographics:</p>
+																<ul style="list-style-type: disc;">
+																		<li>5 RIT students (on-campus & off-campus)</li>
+																		<ul style="list-style-type: circle;">
+																				<li>3 International Graduate students</li>
+																				<li>1 International Undergraduate student</li>
+																				<li>1 American citizen Graduate student</li>
+																		</ul>
+																		<li>3 Administrative staff</li>
+																		<ul style="list-style-type: circle;">
+																				<li>1 Academic Advisor from GCCIS</li>
+																				<li>1 Counselor from International Student Services Office</li>
+																				<li>1 Counselor from the office of Graduate Admissions Office</li>
+																		</ul>
+																</ul>
+														</div>
 
-                            <h1 class="headline font-weight-bold mb-2">Conducting Interviews</h1>
-                            <p class="ml-4 mb-4">
-                                Our team members conducted interviews on various stakeholders. We asked a series of questions to the interviewees and notes were taken and important points were highlighted. Each interview session lasted for about 10 - 15 minutes.
-                            </p>
+														<h1 class="headline font-weight-bold mb-2">Conducting Interviews</h1>
+														<p class="ml-4 mb-4">
+																Our team members conducted interviews on various stakeholders. We asked a series of questions to the interviewees and notes were taken and important points were highlighted. Each interview session lasted for about 10 - 15 minutes.
+														</p>
 
-                            <h1 class="headline font-weight-bold mb-2">Interview Questions</h1>
-                            <v-list>
-                                <v-list-group
-                                    no-action
-                                >
-                                    <template v-slot:activator>
-                                        <v-list-item-content>
-                                            <v-list-item-title>Questions asked to students:</v-list-item-title>
-                                        </v-list-item-content>
-                                    </template>
-                            
-                                    <v-list-item>What year are you in?</v-list-item>
-                                    <v-list-item>When did you get your admission?</v-list-item>
-                                    <v-list-item>How often did you receive information during the admission process? What issues did you face accessing this information?</v-list-item>
-                                    <v-list-item>How did you get information regarding the visa process?</v-list-item>
-                                    <v-list-item>What issues did you face during the visa process and accessing information for it. Would you suggest better information be put for this process?</v-list-item>
-                                    <v-list-item>Was there enough information regarding documents needed for completing immunization forms and how accessible were these information?</v-list-item>
-                                    <v-list-item>How were you informed about the student computer account?</v-list-item>
-                                    <v-list-item>What issues did you face while creating the computer account?</v-list-item>
-                                    <v-list-item>How did you know about setting the RIT computer account?</v-list-item>
-                                    <v-list-item>How did you get information for registering for orientation?</v-list-item>
-                                    <v-list-item>Information about submitting transcripts and degree certificates, how accessible were these?</v-list-item>
-                                    <v-list-item>Did you get enough information regarding health insurance?</v-list-item>
-                                    <v-list-item>Did you know about the early arrival accommodation for on-campus students?</v-list-item>
-                                    <v-list-item>Did you sign up for the free student pick up from the airport?</v-list-item>
-                                    <v-list-item>How effective was the mode of communication with the administration of RIT?</v-list-item>
-                                    <v-list-item>Did you get enough information about the steps required to complete the collection of the RIT ID card?</v-list-item>
-                                    <v-list-item>Were you aware about document submission at the ISS prior to arriving on campus?</v-list-item>
-                                    <v-list-item>How did you learn about my-courses and how accessible was it?</v-list-item>
-                                    <v-list-item>Did you find any difficulty updating your details on the SIS for course enrollment?</v-list-item>
-                                    <v-list-item>Did you get enough information about tuition fees payment on e-services?</v-list-item>
-                                </v-list-group>
+														<h1 class="headline font-weight-bold mb-2">Interview Questions</h1>
+														<v-list>
+																<v-list-group
+																		no-action
+																>
+																		<template v-slot:activator>
+																				<v-list-item-content>
+																						<v-list-item-title>Questions asked to students:</v-list-item-title>
+																				</v-list-item-content>
+																		</template>
+														
+																		<v-list-item>What year are you in?</v-list-item>
+																		<v-list-item>When did you get your admission?</v-list-item>
+																		<v-list-item>How often did you receive information during the admission process? What issues did you face accessing this information?</v-list-item>
+																		<v-list-item>How did you get information regarding the visa process?</v-list-item>
+																		<v-list-item>What issues did you face during the visa process and accessing information for it. Would you suggest better information be put for this process?</v-list-item>
+																		<v-list-item>Was there enough information regarding documents needed for completing immunization forms and how accessible were these information?</v-list-item>
+																		<v-list-item>How were you informed about the student computer account?</v-list-item>
+																		<v-list-item>What issues did you face while creating the computer account?</v-list-item>
+																		<v-list-item>How did you know about setting the RIT computer account?</v-list-item>
+																		<v-list-item>How did you get information for registering for orientation?</v-list-item>
+																		<v-list-item>Information about submitting transcripts and degree certificates, how accessible were these?</v-list-item>
+																		<v-list-item>Did you get enough information regarding health insurance?</v-list-item>
+																		<v-list-item>Did you know about the early arrival accommodation for on-campus students?</v-list-item>
+																		<v-list-item>Did you sign up for the free student pick up from the airport?</v-list-item>
+																		<v-list-item>How effective was the mode of communication with the administration of RIT?</v-list-item>
+																		<v-list-item>Did you get enough information about the steps required to complete the collection of the RIT ID card?</v-list-item>
+																		<v-list-item>Were you aware about document submission at the ISS prior to arriving on campus?</v-list-item>
+																		<v-list-item>How did you learn about my-courses and how accessible was it?</v-list-item>
+																		<v-list-item>Did you find any difficulty updating your details on the SIS for course enrollment?</v-list-item>
+																		<v-list-item>Did you get enough information about tuition fees payment on e-services?</v-list-item>
+																</v-list-group>
 
-                                <v-list-group
-                                    no-action
-                                >
-                                    <template v-slot:activator>
-                                        <v-list-item-content>
-                                            <v-list-item-title>Questions asked to administration:</v-list-item-title>
-                                        </v-list-item-content>
-                                    </template>
-                            
-                                    <v-list-item>What all resources are used to disperse information to all the students?</v-list-item>
-                                    <v-list-item>What major problems occur while contacting international students?</v-list-item>
-                                    <v-list-item>What are the major areas where students face problems?</v-list-item>
-                                    <v-list-item>What is the main communication channel between the departments and the administration?</v-list-item>
-                                    <v-list-item>What are the problems that students have when they reach out to you?</v-list-item>
-                                    <v-list-item>What are the problems faced by the students during the application process?</v-list-item>
-                                    <v-list-item>Whom do the students usually contact if they have a problem before coming to college?</v-list-item>
-                                    <v-list-item>In what way is the application process different for undergraduate students from the graduate students?</v-list-item>
-                                    <v-list-item>How do you keep track of students admission process?</v-list-item>
-                                    <v-list-item>How effective is the mode of communication if the student does not have an RIT email?</v-list-item>
-                                    <v-list-item>What happens if the student defers the admission?</v-list-item>
-                                    <v-list-item>Are automatic emails setup for deferred students?</v-list-item>
-                                </v-list-group>
-                            </v-list>
+																<v-list-group
+																		no-action
+																>
+																		<template v-slot:activator>
+																				<v-list-item-content>
+																						<v-list-item-title>Questions asked to administration:</v-list-item-title>
+																				</v-list-item-content>
+																		</template>
+														
+																		<v-list-item>What all resources are used to disperse information to all the students?</v-list-item>
+																		<v-list-item>What major problems occur while contacting international students?</v-list-item>
+																		<v-list-item>What are the major areas where students face problems?</v-list-item>
+																		<v-list-item>What is the main communication channel between the departments and the administration?</v-list-item>
+																		<v-list-item>What are the problems that students have when they reach out to you?</v-list-item>
+																		<v-list-item>What are the problems faced by the students during the application process?</v-list-item>
+																		<v-list-item>Whom do the students usually contact if they have a problem before coming to college?</v-list-item>
+																		<v-list-item>In what way is the application process different for undergraduate students from the graduate students?</v-list-item>
+																		<v-list-item>How do you keep track of students admission process?</v-list-item>
+																		<v-list-item>How effective is the mode of communication if the student does not have an RIT email?</v-list-item>
+																		<v-list-item>What happens if the student defers the admission?</v-list-item>
+																		<v-list-item>Are automatic emails setup for deferred students?</v-list-item>
+																</v-list-group>
+														</v-list>
 
-                            <h1 class="headline font-weight-bold mb-2">Analyzing Data</h1>
-                            <div class="ml-4 mb-4">
-                                <p class="mb-2">After conducting the interviews, our team then spent time transcribing these into scripts to allow us to analyze the data effectively. We then went ahead to break these scripts into sentences and then broke these sentences down further to allow us to get reasonable data about issues these participants were facing and comment about the existing systems that are currently in place. </p>
+														<h1 class="headline font-weight-bold mb-2">Analyzing Data</h1>
+														<div class="ml-4 mb-4">
+																<p class="mb-2">After conducting the interviews, our team then spent time transcribing these into scripts to allow us to analyze the data effectively. We then went ahead to break these scripts into sentences and then broke these sentences down further to allow us to get reasonable data about issues these participants were facing and comment about the existing systems that are currently in place. </p>
 
-                                <p class="title font-weight-medium mb-1">Affinity Notes</p>
-                                <p class="mb-3">We then proceeded on writing these analyzed data on the post-it notes (Affinity notes) and then put everything on the board as part of the first initial grouping (which was a more general grouping).</p>
+																<p class="title font-weight-medium mb-1">Affinity Notes</p>
+																<p class="mb-3">We then proceeded on writing these analyzed data on the post-it notes (Affinity notes) and then put everything on the board as part of the first initial grouping (which was a more general grouping).</p>
 
-                                <p class="title font-weight-medium mb-1">Bottom Level Labels (Blue labels)</p>
-                                <p class="mb-3">We proceeded on putting general ideas together and putting these general ideas under a common category by identifying points that were common with some of our interview participants. This gave us a basic understanding of the demographic data. We used the blue post-it notes to identify this group.</p>
+																<p class="title font-weight-medium mb-1">Bottom Level Labels (Blue labels)</p>
+																<p class="mb-3">We proceeded on putting general ideas together and putting these general ideas under a common category by identifying points that were common with some of our interview participants. This gave us a basic understanding of the demographic data. We used the blue post-it notes to identify this group.</p>
 
-                                <p class="title font-weight-medium mb-1">Temporary Top Level Labels (Green labels)</p>
-                                <p class="mb-3">For the temporary top level, we had grouped the bottom level into a more broader and common idea category and created temporary category grouping which we had put in the temporary green post-it note. This allowed us to identify relationships between the bottom level groups.</p>
+																<p class="title font-weight-medium mb-1">Temporary Top Level Labels (Green labels)</p>
+																<p class="mb-3">For the temporary top level, we had grouped the bottom level into a more broader and common idea category and created temporary category grouping which we had put in the temporary green post-it note. This allowed us to identify relationships between the bottom level groups.</p>
 
-                                <p class="title font-weight-medium mb-1">Middle Level Labels (Pink labels)</p>
-                                <p class="mb-3">The Middle level was about bringing the temporary top-level grouping into a more organized and descriptive grouping that allowed us to get a better understanding of the user's needs.</p>
+																<p class="title font-weight-medium mb-1">Middle Level Labels (Pink labels)</p>
+																<p class="mb-3">The Middle level was about bringing the temporary top-level grouping into a more organized and descriptive grouping that allowed us to get a better understanding of the user's needs.</p>
 
-                                <p class="title font-weight-medium mb-1">Top Level Labels (Green labels)</p>
-                                <p class="mb-3">For the final step of the interpretation, we used the green post-it note to combine the ideas gotten from the grouping done on the middle level above. This gave a more specific description of what the users wanted and the general solution we should focus on.</p>
-                            </div>
+																<p class="title font-weight-medium mb-1">Top Level Labels (Green labels)</p>
+																<p class="mb-3">For the final step of the interpretation, we used the green post-it note to combine the ideas gotten from the grouping done on the middle level above. This gave a more specific description of what the users wanted and the general solution we should focus on.</p>
+														</div>
 
-                            <h1 class="headline font-weight-bold mb-2">Affinity Diagrams</h1>
-                            <v-carousel
-                                height=750
-                                hide-delimiter-background
-                                class="mb-4"
-                            >
-                                <v-carousel-item
-                                    src="images/affinityDiagram.jpg"
-                                >
-                                    <v-container
-                                        fill-height
-                                        fluid
-                                        pa-0 ma-0 pb-3 
-                                    >
-                                        <v-layout fill-height align-end pb-4 mb-4>
-                                            <v-flex xs12>
-                                                <v-card color="#0000008a" class="pa-2">
-                                                    <h1 class="title font-weight-light text-center">Affinity Diagram with the Top Level Labels</h1>
-                                                </v-card>
-                                            </v-flex>
-                                        </v-layout>
-                                    </v-container>
-                                </v-carousel-item>
-                                <v-carousel-item
-                                    src="images/affinityNotes.jpg"
-                                >
-                                    <v-container
-                                        fill-height
-                                        fluid
-                                        pa-0 ma-0 pb-3 
-                                    >
-                                        <v-layout fill-height align-end pb-4 mb-4>
-                                            <v-flex xs12>
-                                                <v-card color="#0000008a" class="pa-2">
-                                                    <h1 class="title font-weight-light text-center">Affinity Notes after interpretation session</h1>
-                                                </v-card>
-                                            </v-flex>
-                                        </v-layout>
-                                    </v-container>
-                                </v-carousel-item>
-                                <v-carousel-item
-                                    src="images/bottomLevel.jpg"
-                                >
-                                    <v-container
-                                        fill-height
-                                        fluid
-                                        pa-0 ma-0 pb-3 
-                                    >
-                                        <v-layout fill-height align-end pb-4 mb-4>
-                                            <v-flex xs12>
-                                                <v-card color="#0000008a" class="pa-2">
-                                                    <h1 class="title font-weight-light text-center">Introducing bottom level labels</h1>
-                                                </v-card>
-                                            </v-flex>
-                                        </v-layout>
-                                    </v-container>
-                                </v-carousel-item>
-                                <v-carousel-item
-                                    src="images/tempTopLevel.jpg"
-                                >
-                                    <v-container
-                                        fill-height
-                                        fluid
-                                        pa-0 ma-0 pb-3 
-                                    >
-                                        <v-layout fill-height align-end pb-4 mb-4>
-                                            <v-flex xs12>
-                                                <v-card color="#0000008a" class="pa-2">
-                                                    <h1 class="title font-weight-light text-center">Temporary top level labels</h1>
-                                                </v-card>
-                                            </v-flex>
-                                        </v-layout>
-                                    </v-container>
-                                </v-carousel-item>
-                                <v-carousel-item
-                                    src="images/middleLevel.jpg"
-                                >
-                                    <v-container
-                                        fill-height
-                                        fluid
-                                        pa-0 ma-0 pb-3 
-                                    >
-                                        <v-layout fill-height align-end pb-4 mb-4>
-                                            <v-flex xs12>
-                                                <v-card color="#0000008a" class="pa-2">
-                                                    <h1 class="title font-weight-light text-center">Regrouping with middle level labels</h1>
-                                                </v-card>
-                                            </v-flex>
-                                        </v-layout>
-                                    </v-container>
-                                </v-carousel-item>
-                            </v-carousel>
+														<h1 class="headline font-weight-bold mb-2">Affinity Diagrams</h1>
+														<v-carousel
+																height=750
+																hide-delimiter-background
+																class="mb-4"
+														>
+																<v-carousel-item
+																		src="images/affinityDiagram.jpg"
+																>
+																		<v-container
+																				fill-height
+																				fluid
+																				pa-0 ma-0 pb-3 
+																		>
+																				<v-layout fill-height align-end pb-4 mb-4>
+																						<v-flex xs12>
+																								<v-card color="#0000008a" class="pa-2">
+																										<h1 class="title font-weight-light text-center">Affinity Diagram with the Top Level Labels</h1>
+																								</v-card>
+																						</v-flex>
+																				</v-layout>
+																		</v-container>
+																</v-carousel-item>
+																<v-carousel-item
+																		src="images/affinityNotes.jpg"
+																>
+																		<v-container
+																				fill-height
+																				fluid
+																				pa-0 ma-0 pb-3 
+																		>
+																				<v-layout fill-height align-end pb-4 mb-4>
+																						<v-flex xs12>
+																								<v-card color="#0000008a" class="pa-2">
+																										<h1 class="title font-weight-light text-center">Affinity Notes after interpretation session</h1>
+																								</v-card>
+																						</v-flex>
+																				</v-layout>
+																		</v-container>
+																</v-carousel-item>
+																<v-carousel-item
+																		src="images/bottomLevel.jpg"
+																>
+																		<v-container
+																				fill-height
+																				fluid
+																				pa-0 ma-0 pb-3 
+																		>
+																				<v-layout fill-height align-end pb-4 mb-4>
+																						<v-flex xs12>
+																								<v-card color="#0000008a" class="pa-2">
+																										<h1 class="title font-weight-light text-center">Introducing bottom level labels</h1>
+																								</v-card>
+																						</v-flex>
+																				</v-layout>
+																		</v-container>
+																</v-carousel-item>
+																<v-carousel-item
+																		src="images/tempTopLevel.jpg"
+																>
+																		<v-container
+																				fill-height
+																				fluid
+																				pa-0 ma-0 pb-3 
+																		>
+																				<v-layout fill-height align-end pb-4 mb-4>
+																						<v-flex xs12>
+																								<v-card color="#0000008a" class="pa-2">
+																										<h1 class="title font-weight-light text-center">Temporary top level labels</h1>
+																								</v-card>
+																						</v-flex>
+																				</v-layout>
+																		</v-container>
+																</v-carousel-item>
+																<v-carousel-item
+																		src="images/middleLevel.jpg"
+																>
+																		<v-container
+																				fill-height
+																				fluid
+																				pa-0 ma-0 pb-3 
+																		>
+																				<v-layout fill-height align-end pb-4 mb-4>
+																						<v-flex xs12>
+																								<v-card color="#0000008a" class="pa-2">
+																										<h1 class="title font-weight-light text-center">Regrouping with middle level labels</h1>
+																								</v-card>
+																						</v-flex>
+																				</v-layout>
+																		</v-container>
+																</v-carousel-item>
+														</v-carousel>
 
-                            <h1 class="headline font-weight-bold mb-2">Miro Board Representation</h1>
-                            <iframe width="1090" height="360" src="https://miro.com/app/embed/o9J_kw6S9Is=/?" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                        </v-container>
-                    </v-card>
-                    </v-stepper-content>
-                    <v-stepper-content
-                        :step="3"
-                    >
-                        <v-card>
-                            <v-container>
-                                <h1 class="display-1 font-weight-medium mb-4 text-center">Personas</h1>
+														<h1 class="headline font-weight-bold mb-2">Miro Board Representation</h1>
+														<iframe width="1090" height="360" src="https://miro.com/app/embed/o9J_kw6S9Is=/?" frameborder="0" scrolling="no" allowfullscreen></iframe>
+												</v-container>
+										</v-card>
+										</v-stepper-content>
+										<v-stepper-content
+												:step="3"
+										>
+												<v-card>
+														<v-container>
+																<h1 class="display-1 font-weight-medium mb-4 text-center">Personas</h1>
 
-                                <h1 class="title font-weight-bold mb-2">Primary</h1>
-                                <v-card
-                                class="mx-auto mb-4 font_montserrat"
-                                width="800"
-                                height="380"
-                                style="
-                                    background: rgb(46, 5, 145);
-                                    background: -webkit-linear-gradient(to bottom, rgb(165, 154, 255), rgb(46, 5, 145));
-                                    background: linear-gradient(to bottom, rgb(165, 154, 255), rgb(46, 5, 145))"
-                            >
-                                  <v-row>
-                                    <v-col class="pt-0" cols="4">
-                                        <v-row>
-                                            <v-col class="pt-1 pl-6">
-                                                <v-avatar
-                                                    color="white"
-                                                    size="220"
-                                                    style="box-shadow: 0px 6px 10px black;"
-                                                >
-                                                    <v-img src="images/yang.jpg" position="right" max-width="200" max-height="200"></v-img>
-                                                </v-avatar>
-                                            </v-col>
-                                        </v-row>
+																<h1 class="title font-weight-bold mb-2">Primary</h1>
+																<v-card
+																class="mx-auto mb-4 font_montserrat"
+																width="800"
+																height="380"
+																style="
+																		background: rgb(46, 5, 145);
+																		background: -webkit-linear-gradient(to bottom, rgb(165, 154, 255), rgb(46, 5, 145));
+																		background: linear-gradient(to bottom, rgb(165, 154, 255), rgb(46, 5, 145))"
+														>
+																	<v-row>
+																		<v-col class="pt-0" cols="4">
+																				<v-row>
+																						<v-col class="pt-1 pl-6">
+																								<v-avatar
+																										color="white"
+																										size="220"
+																										style="box-shadow: 0px 6px 10px black;"
+																								>
+																										<v-img src="images/yang.jpg" position="right" max-width="200" max-height="200"></v-img>
+																								</v-avatar>
+																						</v-col>
+																				</v-row>
 
-                                        <v-row align="center">
-                                            <v-col class="pt-0">
-                                                <h1 class=" font-weight-regular white--text text-center mb-1" style="text-shadow: 0px 3px 2px black;">Yang Zheng</h1>
-                                                <p class=" caption white--text text-center">Male, 25 <br/> Rochester Institute of Technology <br/> MS in Computer Engineering <br/> Country: China</p>
-                                            </v-col>
-                                        </v-row>
-                                    </v-col>
-                                    <v-col
-                                        class="pt-4 pr-7"
-                                        cols="8"
-                                    >
-                                        <h3 class="white--text  text-uppercase">About</h3>
-                                        <p class="white--text  text-justify" style="font-size: 10px;">
-                                            Yang Zheng is a graduate student from China. He worked as a software developer 
-                                            before coming to RIT for his master’s degree. He really appreciates well documented 
-                                            information and finds too many emails annoying. He has applied filters to sift 
-                                            through the hoard of emails to just get the important ones and because of this he 
-                                            sometimes misses important information which gets filtered out. He regularly visits 
-                                            the RIT website and finds it easy to navigate.
-                                        </p>
-                                        <v-row class="ma-n3">
-                                            <v-col cols="4">
-                                                <h4 class="white--text ">End Goals</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; Access Information easily <br/>
-                                                    &bull; Access information on the go <br/>
-                                                    &bull; Find information in a single space <br/>
-                                                    &bull; Track progress <br/>
-                                                </p>
-                                            </v-col>
-                                            <v-col cols="4">
-                                                <h4 class="white--text ">Experience Goals</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; Feel in control <br/>
-                                                    &bull; Access on different platforms <br/>
-                                                    &bull; Minimize point of contacts <br/>
-                                                </p>
-                                            </v-col>
-                                            <v-col cols="4">
-                                                <h4 class="white--text ">Life Goals</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; Finish school with good grades <br/>
-                                                    &bull; Get a good job <br/>
-                                                    &bull; Be successful in life <br/>
-                                                </p>
-                                            </v-col>
-                                        </v-row>
-                                        <v-row class="ma-n4">
-                                            <v-col cols="3" style="line-height: 18px;">
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=6 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=7 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=5 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=3 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=4 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=2 size="10px"></v-rating>
-                                            </v-col>
-                                            <v-col cols="3" class="ml-n6">
-                                                <p class="white--text" style="font-size: 10px; line-height: 18px;">
-                                                    Social Media <br/>
-                                                    Website Access <br/>
-                                                    Phone Usage <br/>
-                                                    Email Usage <br/>
-                                                    Communication Skills <br/>
-                                                    Organization Skills <br/>
-                                                </p>
-                                            </v-col>
-                                            <v-col cols="6">
-                                                <h4 class="white--text ">Pain Points</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; Scattered information <br/>
-                                                    &bull; Constantly bombarded with information <br/>
-                                                    &bull; Don't know the right channel to access 
-                                                    information <br/>
-                                                </p>
-                                            </v-col>
-                                        </v-row>
-                                    </v-col>
-                                  </v-row>
-                              </v-card>
+																				<v-row align="center">
+																						<v-col class="pt-0">
+																								<h1 class=" font-weight-regular white--text text-center mb-1" style="text-shadow: 0px 3px 2px black;">Yang Zheng</h1>
+																								<p class=" caption white--text text-center">Male, 25 <br/> Rochester Institute of Technology <br/> MS in Computer Engineering <br/> Country: China</p>
+																						</v-col>
+																				</v-row>
+																		</v-col>
+																		<v-col
+																				class="pt-4 pr-7"
+																				cols="8"
+																		>
+																				<h3 class="white--text  text-uppercase">About</h3>
+																				<p class="white--text  text-justify" style="font-size: 10px;">
+																						Yang Zheng is a graduate student from China. He worked as a software developer 
+																						before coming to RIT for his master’s degree. He really appreciates well documented 
+																						information and finds too many emails annoying. He has applied filters to sift 
+																						through the hoard of emails to just get the important ones and because of this he 
+																						sometimes misses important information which gets filtered out. He regularly visits 
+																						the RIT website and finds it easy to navigate.
+																				</p>
+																				<v-row class="ma-n3">
+																						<v-col cols="4">
+																								<h4 class="white--text ">End Goals</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; Access Information easily <br/>
+																										&bull; Access information on the go <br/>
+																										&bull; Find information in a single space <br/>
+																										&bull; Track progress <br/>
+																								</p>
+																						</v-col>
+																						<v-col cols="4">
+																								<h4 class="white--text ">Experience Goals</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; Feel in control <br/>
+																										&bull; Access on different platforms <br/>
+																										&bull; Minimize point of contacts <br/>
+																								</p>
+																						</v-col>
+																						<v-col cols="4">
+																								<h4 class="white--text ">Life Goals</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; Finish school with good grades <br/>
+																										&bull; Get a good job <br/>
+																										&bull; Be successful in life <br/>
+																								</p>
+																						</v-col>
+																				</v-row>
+																				<v-row class="ma-n4">
+																						<v-col cols="3" style="line-height: 18px;">
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=6 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=7 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=5 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=3 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=4 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=2 size="10px"></v-rating>
+																						</v-col>
+																						<v-col cols="3" class="ml-n6">
+																								<p class="white--text" style="font-size: 10px; line-height: 18px;">
+																										Social Media <br/>
+																										Website Access <br/>
+																										Phone Usage <br/>
+																										Email Usage <br/>
+																										Communication Skills <br/>
+																										Organization Skills <br/>
+																								</p>
+																						</v-col>
+																						<v-col cols="6">
+																								<h4 class="white--text ">Pain Points</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; Scattered information <br/>
+																										&bull; Constantly bombarded with information <br/>
+																										&bull; Don't know the right channel to access 
+																										information <br/>
+																								</p>
+																						</v-col>
+																				</v-row>
+																		</v-col>
+																	</v-row>
+															</v-card>
 
-                              <h1 class="title font-weight-bold mb-2">Secondary 1</h1>
-                              <v-card
-                                class="mx-auto mb-4 font_montserrat"
-                                width="800"
-                                height="380"
-                                style="
-                                    background: rgb(145, 5, 5);
-                                    background: -webkit-linear-gradient(to bottom, rgb(255, 154, 154), rgb(145, 5, 5));
-                                    background: linear-gradient(to bottom, rgb(255, 154, 154), rgb(145, 5, 5))"
-                                >
-                                  <v-row>
-                                    <v-col class="pt-0" cols="4">
-                                        <v-row>
-                                            <v-col class="pt-1 pl-6">
-                                                <v-avatar
-                                                    color="white"
-                                                    size="220"
-                                                    style="box-shadow: 0px 6px 10px black;"
-                                                >
-                                                    <v-img src="images/sanjana.jpg" max-width="200" max-height="200"></v-img>
-                                                </v-avatar>
-                                            </v-col>
-                                        </v-row>
+															<h1 class="title font-weight-bold mb-2">Secondary 1</h1>
+															<v-card
+																class="mx-auto mb-4 font_montserrat"
+																width="800"
+																height="380"
+																style="
+																		background: rgb(145, 5, 5);
+																		background: -webkit-linear-gradient(to bottom, rgb(255, 154, 154), rgb(145, 5, 5));
+																		background: linear-gradient(to bottom, rgb(255, 154, 154), rgb(145, 5, 5))"
+																>
+																	<v-row>
+																		<v-col class="pt-0" cols="4">
+																				<v-row>
+																						<v-col class="pt-1 pl-6">
+																								<v-avatar
+																										color="white"
+																										size="220"
+																										style="box-shadow: 0px 6px 10px black;"
+																								>
+																										<v-img src="images/sanjana.jpg" max-width="200" max-height="200"></v-img>
+																								</v-avatar>
+																						</v-col>
+																				</v-row>
 
-                                        <v-row align="center">
-                                            <v-col class="pt-0">
-                                                <h1 class=" font-weight-regular white--text text-center mb-1" style="text-shadow: 0px 3px 2px black; font-size: 30px;">Sanjana Kapoor</h1>
-                                                <p class=" caption white--text text-center">Female, 22 <br/> Rochester Institute of Technology <br/> MFA in Industrial Design <br/> Country: India</p>
-                                            </v-col>
-                                        </v-row>
-                                    </v-col>
-                                    <v-col
-                                        class="pt-4 pr-7"
-                                        cols="8"
-                                    >
-                                        <h3 class="white--text  text-uppercase">About</h3>
-                                        <p class="white--text  text-justify" style="font-size: 10px;">
-                                            Sanjana is an international graduate student from India. Being in a creative field, 
-                                            she tends to take things as they come and finds the most creative solution on the 
-                                            move. She likes to work alone and maintain minimal contact with her co-workers 
-                                            outside of work. She usually goes through all her emails to be in the know but finds 
-                                            it hard to keep track of all the things she needs to do. She frequently visits the RIT 
-                                            websites to get important information.
-                                        </p>
-                                        <v-row class="ma-n3">
-                                            <v-col cols="4">
-                                                <h4 class="white--text ">End Goals</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; Efficiently keep track of the progress <br/>
-                                                    &bull; Wants to access information without anyone’s help <br/>
-                                                    &bull; To grab information easily <br/>
-                                                </p>
-                                            </v-col>
-                                            <v-col cols="4">
-                                                <h4 class="white--text ">Experience Goals</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; Wants to feel confident <br/>
-                                                    &bull; Feel self-sufficient <br/>
-                                                </p>
-                                            </v-col>
-                                            <v-col cols="4">
-                                                <h4 class="white--text ">Life Goals</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; Wants to own a multinational company <br/>
-                                                    &bull; Work towards women empowerment <br/>
-                                                </p>
-                                            </v-col>
-                                        </v-row>
-                                        <v-row class="ma-n4">
-                                            <v-col cols="3" style="line-height: 18px;">
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=2 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=6 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=4 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=7 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=3 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=1 size="10px"></v-rating>
-                                            </v-col>
-                                            <v-col cols="3" class="ml-n6">
-                                                <p class="white--text" style="font-size: 10px; line-height: 18px;">
-                                                    Social Media <br/>
-                                                    Website Access <br/>
-                                                    Phone Usage <br/>
-                                                    Email Usage <br/>
-                                                    Communication Skills <br/>
-                                                    Organization Skills <br/>
-                                                </p>
-                                            </v-col>
-                                            <v-col cols="6">
-                                                <h4 class="white--text ">Pain Points</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; Can’t keep track of admission procedures <br/>
-                                                    &bull; Navigating the website is hard <br/>
-                                                    &bull; Hard to gather information from verbal 
-                                                    conversation <br/>
-                                                </p>
-                                            </v-col>
-                                        </v-row>
-                                    </v-col>
-                                  </v-row>
-                              </v-card>
+																				<v-row align="center">
+																						<v-col class="pt-0">
+																								<h1 class=" font-weight-regular white--text text-center mb-1" style="text-shadow: 0px 3px 2px black; font-size: 30px;">Sanjana Kapoor</h1>
+																								<p class=" caption white--text text-center">Female, 22 <br/> Rochester Institute of Technology <br/> MFA in Industrial Design <br/> Country: India</p>
+																						</v-col>
+																				</v-row>
+																		</v-col>
+																		<v-col
+																				class="pt-4 pr-7"
+																				cols="8"
+																		>
+																				<h3 class="white--text  text-uppercase">About</h3>
+																				<p class="white--text  text-justify" style="font-size: 10px;">
+																						Sanjana is an international graduate student from India. Being in a creative field, 
+																						she tends to take things as they come and finds the most creative solution on the 
+																						move. She likes to work alone and maintain minimal contact with her co-workers 
+																						outside of work. She usually goes through all her emails to be in the know but finds 
+																						it hard to keep track of all the things she needs to do. She frequently visits the RIT 
+																						websites to get important information.
+																				</p>
+																				<v-row class="ma-n3">
+																						<v-col cols="4">
+																								<h4 class="white--text ">End Goals</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; Efficiently keep track of the progress <br/>
+																										&bull; Wants to access information without anyone’s help <br/>
+																										&bull; To grab information easily <br/>
+																								</p>
+																						</v-col>
+																						<v-col cols="4">
+																								<h4 class="white--text ">Experience Goals</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; Wants to feel confident <br/>
+																										&bull; Feel self-sufficient <br/>
+																								</p>
+																						</v-col>
+																						<v-col cols="4">
+																								<h4 class="white--text ">Life Goals</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; Wants to own a multinational company <br/>
+																										&bull; Work towards women empowerment <br/>
+																								</p>
+																						</v-col>
+																				</v-row>
+																				<v-row class="ma-n4">
+																						<v-col cols="3" style="line-height: 18px;">
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=2 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=6 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=4 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=7 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=3 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=1 size="10px"></v-rating>
+																						</v-col>
+																						<v-col cols="3" class="ml-n6">
+																								<p class="white--text" style="font-size: 10px; line-height: 18px;">
+																										Social Media <br/>
+																										Website Access <br/>
+																										Phone Usage <br/>
+																										Email Usage <br/>
+																										Communication Skills <br/>
+																										Organization Skills <br/>
+																								</p>
+																						</v-col>
+																						<v-col cols="6">
+																								<h4 class="white--text ">Pain Points</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; Can’t keep track of admission procedures <br/>
+																										&bull; Navigating the website is hard <br/>
+																										&bull; Hard to gather information from verbal 
+																										conversation <br/>
+																								</p>
+																						</v-col>
+																				</v-row>
+																		</v-col>
+																	</v-row>
+															</v-card>
 
-                              <h1 class="title font-weight-bold mb-2">Secondary 2</h1>
-                              <v-card
-                                class="mx-auto mb-4 font_montserrat"
-                                width="800"
-                                height="380"
-                                style="
-                                    background: rgb(4, 81, 52);
-                                    background: -webkit-linear-gradient(to bottom, rgb(82, 202, 136), rgb(4, 81, 52));
-                                    background: linear-gradient(to bottom, rgb(82, 202, 136), rgb(4, 81, 52))"
-                                >
-                                  <v-row>
-                                    <v-col class="pt-0" cols="4">
-                                        <v-row>
-                                            <v-col class="pt-1 pl-6">
-                                                <v-avatar
-                                                    color="white"
-                                                    size="220"
-                                                    style="box-shadow: 0px 6px 10px black;"
-                                                >
-                                                    <v-img src="images/omar.jpg" max-width="200" max-height="200"></v-img>
-                                                </v-avatar>
-                                            </v-col>
-                                        </v-row>
+															<h1 class="title font-weight-bold mb-2">Secondary 2</h1>
+															<v-card
+																class="mx-auto mb-4 font_montserrat"
+																width="800"
+																height="380"
+																style="
+																		background: rgb(4, 81, 52);
+																		background: -webkit-linear-gradient(to bottom, rgb(82, 202, 136), rgb(4, 81, 52));
+																		background: linear-gradient(to bottom, rgb(82, 202, 136), rgb(4, 81, 52))"
+																>
+																	<v-row>
+																		<v-col class="pt-0" cols="4">
+																				<v-row>
+																						<v-col class="pt-1 pl-6">
+																								<v-avatar
+																										color="white"
+																										size="220"
+																										style="box-shadow: 0px 6px 10px black;"
+																								>
+																										<v-img src="images/omar.jpg" max-width="200" max-height="200"></v-img>
+																								</v-avatar>
+																						</v-col>
+																				</v-row>
 
-                                        <v-row align="center">
-                                            <v-col class="pt-0">
-                                                <h1 class=" font-weight-regular white--text text-center mb-1" style="text-shadow: 0px 3px 2px black; font-size: 30px;">Omar Sutton</h1>
-                                                <p class=" caption white--text text-center">Male, 19 <br/> Rochester Institute of Technology <br/> BS in Packaging Science <br/> Country: Ethiopia</p>
-                                            </v-col>
-                                        </v-row>
-                                    </v-col>
-                                    <v-col
-                                        class="pt-2 pr-7"
-                                        cols="8"
-                                    >
-                                        <h3 class="white--text  text-uppercase">About</h3>
-                                        <p class="white--text  text-justify" style="font-size: 10px;">
-                                                Omar is an undergraduate international student from Ethiopia. 
-                                                He likes to talk to everyone and is very sociable. Even before coming to camps to 
-                                                start his semester, he was constantly in touch with his batch mates over Whatsapp. 
-                                                He doesn’t like to receive too many emails and usually just swipes on the 
-                                                notifications and does not read the entire emails. He likes to stay informed by 
-                                                talking to the staff and administration, but often has to visit multiple departments 
-                                                to solve his query as he doesn’t know who is the right person to talk to in the first 
-                                                place.
-                                        </p>
-                                        <v-row class="ma-n4">
-                                            <v-col cols="4">
-                                                <h4 class="white--text ">End Goals</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; Access information through mobile <br/>
-                                                    &bull; Supervise the admission process <br/>
-                                                    &bull; Easily find someone with information <br/>
-                                                </p>
-                                            </v-col>
-                                            <v-col cols="4">
-                                                <h4 class="white--text ">Experience Goals</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; Adapting easily to life in the U.S <br/>
-                                                    &bull; Feel organized <br/>
-                                                </p>
-                                            </v-col>
-                                            <v-col cols="4">
-                                                <h4 class="white--text ">Life Goals</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; To be a top-level research specialist <br/>
-                                                    &bull; Explore the world <br/>
-                                                </p>
-                                            </v-col>
-                                        </v-row>
-                                        <v-row class="ma-n5">
-                                            <v-col cols="3" style="line-height: 18px;">
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=7 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=3 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=6 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=2 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=6 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=4 size="10px"></v-rating>
-                                            </v-col>
-                                            <v-col cols="3" class="ml-n6">
-                                                <p class="white--text" style="font-size: 10px; line-height: 18px;">
-                                                    Social Media <br/>
-                                                    Website Access <br/>
-                                                    Phone Usage <br/>
-                                                    Email Usage <br/>
-                                                    Communication Skills <br/>
-                                                    Organization Skills <br/>
-                                                </p>
-                                            </v-col>
-                                            <v-col cols="6">
-                                                <h4 class="white--text ">Pain Points</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; Receiving too many emails <br/>
-                                                    &bull; Wasting time by searching the required information on the website <br/>
-                                                </p>
-                                            </v-col>
-                                        </v-row>
-                                    </v-col>
-                                  </v-row>
-                              </v-card>
+																				<v-row align="center">
+																						<v-col class="pt-0">
+																								<h1 class=" font-weight-regular white--text text-center mb-1" style="text-shadow: 0px 3px 2px black; font-size: 30px;">Omar Sutton</h1>
+																								<p class=" caption white--text text-center">Male, 19 <br/> Rochester Institute of Technology <br/> BS in Packaging Science <br/> Country: Ethiopia</p>
+																						</v-col>
+																				</v-row>
+																		</v-col>
+																		<v-col
+																				class="pt-2 pr-7"
+																				cols="8"
+																		>
+																				<h3 class="white--text  text-uppercase">About</h3>
+																				<p class="white--text  text-justify" style="font-size: 10px;">
+																								Omar is an undergraduate international student from Ethiopia. 
+																								He likes to talk to everyone and is very sociable. Even before coming to camps to 
+																								start his semester, he was constantly in touch with his batch mates over Whatsapp. 
+																								He doesn’t like to receive too many emails and usually just swipes on the 
+																								notifications and does not read the entire emails. He likes to stay informed by 
+																								talking to the staff and administration, but often has to visit multiple departments 
+																								to solve his query as he doesn’t know who is the right person to talk to in the first 
+																								place.
+																				</p>
+																				<v-row class="ma-n4">
+																						<v-col cols="4">
+																								<h4 class="white--text ">End Goals</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; Access information through mobile <br/>
+																										&bull; Supervise the admission process <br/>
+																										&bull; Easily find someone with information <br/>
+																								</p>
+																						</v-col>
+																						<v-col cols="4">
+																								<h4 class="white--text ">Experience Goals</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; Adapting easily to life in the U.S <br/>
+																										&bull; Feel organized <br/>
+																								</p>
+																						</v-col>
+																						<v-col cols="4">
+																								<h4 class="white--text ">Life Goals</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; To be a top-level research specialist <br/>
+																										&bull; Explore the world <br/>
+																								</p>
+																						</v-col>
+																				</v-row>
+																				<v-row class="ma-n5">
+																						<v-col cols="3" style="line-height: 18px;">
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=7 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=3 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=6 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=2 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=6 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=4 size="10px"></v-rating>
+																						</v-col>
+																						<v-col cols="3" class="ml-n6">
+																								<p class="white--text" style="font-size: 10px; line-height: 18px;">
+																										Social Media <br/>
+																										Website Access <br/>
+																										Phone Usage <br/>
+																										Email Usage <br/>
+																										Communication Skills <br/>
+																										Organization Skills <br/>
+																								</p>
+																						</v-col>
+																						<v-col cols="6">
+																								<h4 class="white--text ">Pain Points</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; Receiving too many emails <br/>
+																										&bull; Wasting time by searching the required information on the website <br/>
+																								</p>
+																						</v-col>
+																				</v-row>
+																		</v-col>
+																	</v-row>
+															</v-card>
 
-                              <h1 class="title font-weight-bold mb-2">Anti-Persona</h1>
-                              <v-card
-                                class="mx-auto mb-4 font_montserrat"
-                                width="800"
-                                height="380"
-                                style="
-                                    background: rgb(0, 92, 108);
-                                    background: -webkit-linear-gradient(to bottom, rgb(93, 205, 239), rgb(0, 92, 108));
-                                    background: linear-gradient(to bottom, rgb(93, 205, 239), rgb(0, 92, 108))"
-                                >
-                                  <v-row>
-                                    <v-col class="pt-0" cols="4">
-                                        <v-row>
-                                            <v-col class="pt-1 pl-6">
-                                                <v-avatar
-                                                    color="white"
-                                                    size="220"
-                                                    style="box-shadow: 0px 6px 10px black;"
-                                                >
-                                                    <v-img src="images/ryan.jpg" position="left" max-width="200" max-height="200"></v-img>
-                                                </v-avatar>
-                                            </v-col>
-                                        </v-row>
+															<h1 class="title font-weight-bold mb-2">Anti-Persona</h1>
+															<v-card
+																class="mx-auto mb-4 font_montserrat"
+																width="800"
+																height="380"
+																style="
+																		background: rgb(0, 92, 108);
+																		background: -webkit-linear-gradient(to bottom, rgb(93, 205, 239), rgb(0, 92, 108));
+																		background: linear-gradient(to bottom, rgb(93, 205, 239), rgb(0, 92, 108))"
+																>
+																	<v-row>
+																		<v-col class="pt-0" cols="4">
+																				<v-row>
+																						<v-col class="pt-1 pl-6">
+																								<v-avatar
+																										color="white"
+																										size="220"
+																										style="box-shadow: 0px 6px 10px black;"
+																								>
+																										<v-img src="images/ryan.jpg" position="left" max-width="200" max-height="200"></v-img>
+																								</v-avatar>
+																						</v-col>
+																				</v-row>
 
-                                        <v-row align="center">
-                                            <v-col class="pt-0">
-                                                <h1 class=" font-weight-regular white--text text-center mb-1" style="text-shadow: 0px 3px 2px black; font-size: 30px;">Ryan Hill</h1>
-                                                <p class=" caption white--text text-center">Male, 29 <br/> Rochester Institute of Technology <br/> PhD in Astrophysical Science <br/> Country: United States</p>
-                                            </v-col>
-                                        </v-row>
-                                    </v-col>
-                                    <v-col
-                                        class="pt-4 pr-7"
-                                        cols="8"
-                                    >
-                                        <h3 class="white--text  text-uppercase">About</h3>
-                                        <p class="white--text  text-justify" style="font-size: 10px;">
-                                                Ryan is a doctorate student of astrophysics at RIT. He was the president of the 
-                                                physics club at SUNY Buffalo while pursuing his undergraduate degree from there. 
-                                                He constantly keeps in touch with the faculty and administration staff via emails. 
-                                                He plans his activities weeks in advance and gets annoyed with his research group 
-                                                when they don’t do the same.                                                
-                                        </p>
-                                        <v-row class="ma-n3">
-                                            <v-col cols="4">
-                                                <h4 class="white--text ">End Goals</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; Access Information on the go <br/>
-                                                    &bull; Get notified when new information is available <br/>
-                                                    &bull; Maintain contact with faculty and administration <br/>
-                                                </p>
-                                            </v-col>
-                                            <v-col cols="4">
-                                                <h4 class="white--text ">Experience Goals</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; Be the first to receive information <br/>
-                                                    &bull; Looking for better ways to improve organisation skills <br/>
-                                                </p>
-                                            </v-col>
-                                            <v-col cols="4">
-                                                <h4 class="white--text ">Life Goals</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; Become a Professor <br/>
-                                                    &bull; Be nationally recognized <br/>
-                                                    &bull; Publish several papers <br/>
-                                                    &bull; Get funded to carry out groundbreaking research <br/>
-                                                </p>
-                                            </v-col>
-                                        </v-row>
-                                        <v-row class="ma-n4">
-                                            <v-col cols="3" style="line-height: 18px;">
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=2 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=7 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=4 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=7 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=5 size="10px"></v-rating>
-                                                <v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=6 size="10px"></v-rating>
-                                            </v-col>
-                                            <v-col cols="3" class="ml-n6">
-                                                <p class="white--text" style="font-size: 10px; line-height: 18px;">
-                                                    Social Media <br/>
-                                                    Website Access <br/>
-                                                    Phone Usage <br/>
-                                                    Email Usage <br/>
-                                                    Communication Skills <br/>
-                                                    Organization Skills <br/>
-                                                </p>
-                                            </v-col>
-                                            <v-col cols="6">
-                                                <h4 class="white--text ">Pain Points</h4>
-                                                <p class="white--text " style="font-size: 10px;">
-                                                    &bull; People asking irrelevant questions <br/>
-                                                    &bull; Seeing people not being systematic <br/>
-                                                </p>
-                                            </v-col>
-                                        </v-row>
-                                    </v-col>
-                                  </v-row>
-                              </v-card>
+																				<v-row align="center">
+																						<v-col class="pt-0">
+																								<h1 class=" font-weight-regular white--text text-center mb-1" style="text-shadow: 0px 3px 2px black; font-size: 30px;">Ryan Hill</h1>
+																								<p class=" caption white--text text-center">Male, 29 <br/> Rochester Institute of Technology <br/> PhD in Astrophysical Science <br/> Country: United States</p>
+																						</v-col>
+																				</v-row>
+																		</v-col>
+																		<v-col
+																				class="pt-4 pr-7"
+																				cols="8"
+																		>
+																				<h3 class="white--text  text-uppercase">About</h3>
+																				<p class="white--text  text-justify" style="font-size: 10px;">
+																								Ryan is a doctorate student of astrophysics at RIT. He was the president of the 
+																								physics club at SUNY Buffalo while pursuing his undergraduate degree from there. 
+																								He constantly keeps in touch with the faculty and administration staff via emails. 
+																								He plans his activities weeks in advance and gets annoyed with his research group 
+																								when they don’t do the same.                                                
+																				</p>
+																				<v-row class="ma-n3">
+																						<v-col cols="4">
+																								<h4 class="white--text ">End Goals</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; Access Information on the go <br/>
+																										&bull; Get notified when new information is available <br/>
+																										&bull; Maintain contact with faculty and administration <br/>
+																								</p>
+																						</v-col>
+																						<v-col cols="4">
+																								<h4 class="white--text ">Experience Goals</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; Be the first to receive information <br/>
+																										&bull; Looking for better ways to improve organisation skills <br/>
+																								</p>
+																						</v-col>
+																						<v-col cols="4">
+																								<h4 class="white--text ">Life Goals</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; Become a Professor <br/>
+																										&bull; Be nationally recognized <br/>
+																										&bull; Publish several papers <br/>
+																										&bull; Get funded to carry out groundbreaking research <br/>
+																								</p>
+																						</v-col>
+																				</v-row>
+																				<v-row class="ma-n4">
+																						<v-col cols="3" style="line-height: 18px;">
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=2 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=7 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=4 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=7 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=5 size="10px"></v-rating>
+																								<v-rating background-color="white" color="white" dense empty-icon="mdi-checkbox-blank-circle-outline" full-icon="mdi-checkbox-blank-circle" length=8 readonly :value=6 size="10px"></v-rating>
+																						</v-col>
+																						<v-col cols="3" class="ml-n6">
+																								<p class="white--text" style="font-size: 10px; line-height: 18px;">
+																										Social Media <br/>
+																										Website Access <br/>
+																										Phone Usage <br/>
+																										Email Usage <br/>
+																										Communication Skills <br/>
+																										Organization Skills <br/>
+																								</p>
+																						</v-col>
+																						<v-col cols="6">
+																								<h4 class="white--text ">Pain Points</h4>
+																								<p class="white--text " style="font-size: 10px;">
+																										&bull; People asking irrelevant questions <br/>
+																										&bull; Seeing people not being systematic <br/>
+																								</p>
+																						</v-col>
+																				</v-row>
+																		</v-col>
+																	</v-row>
+															</v-card>
 
-                              <!-- <h1 class="headline font-weight-bold mb-2">Process for creating the personas:</h1> -->
-                            </v-container>
-                        </v-card>
-                    </v-stepper-content>
-                    <v-stepper-content
-                        :step="4"
-                    >
-                        <v-card>
-                            <v-container>
-                               Coming Soon...
-                            </v-container>
-                        </v-card>
-                    </v-stepper-content>
-                    <v-stepper-content
-                        :step="5"
-                    >
-                        <v-card>
-                            <v-container>
-                               Coming Soon...
-                            </v-container>
-                        </v-card>
-                    </v-stepper-content>
-                </v-stepper-items>
-            </v-stepper>
-          </v-container>
-          <v-container>
-              <h1 class="display-2 font-weight-light text-center">Our Team</h1>
-              <v-container class="text-center">
-                  <v-row>
-                    <v-col>
-                        <v-avatar
-                            class="profile"
-                            color="grey"
-                            size="164"
-                        >
-                            <v-img src="images/andre.jpeg"></v-img>
-                        </v-avatar>
-                        <v-list-item>
-                            <v-list-item-content>
-                                <v-list-item-title class="title">Andre Udegbe</v-list-item-title>
-                            </v-list-item-content>
-                        </v-list-item>
-                    </v-col>
-                    <v-col>
-                        <v-avatar
-                            class="profile"
-                            color="grey"
-                            size="164"
-                        >
-                            <v-img src="images/manjul.jpg"></v-img>
-                        </v-avatar>
-                        <v-list-item>
-                            <v-list-item-content>
-                                <v-list-item-title class="title">Manjul Sachan</v-list-item-title>
-                            </v-list-item-content>
-                        </v-list-item>
-                    </v-col>
-                    <v-col>
-                        <v-avatar
-                            class="profile"
-                            color="grey"
-                            size="164"
-                        >
-                            <v-img src="images/nisanth.jpg"></v-img>
-                        </v-avatar>
-                        <v-list-item>
-                            <v-list-item-content>
-                                <v-list-item-title class="title">Nisanth Rajavelu</v-list-item-title>
-                            </v-list-item-content>
-                        </v-list-item>
-                    </v-col>
-                  </v-row>
-              </v-container>
-          </v-container>
-      </v-content>
-    </v-app>
-  </div>
+															<h1 class="headline font-weight-bold mb-2">Process for creating the personas:</h1>
+															<p>First, we summarized the interviews and named all the interview subjects as U1, U2, U3, U4 & U5.</p>
+															<p class="mb-2">Next, we came up with user roles and grouped each user under different goals.</p>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-  <script>
-    new Vue({
-      el: '#app',
-      vuetify: new Vuetify(),
-    })
-  </script>
+															<v-img class="mb-2" src="images/userRoles.jpg"></v-img>
+
+															<h1 class="subtitle-1 font-weight-medium">Roles:</h1>
+															<ul class="mb-4">
+																	<li>People using social media to get information.( U1,U2,U5)</li>
+																	<li>People using the RIT website to get the information.( U1,U4,U5)</li>
+																	<li>People preferring Mobile over PCs/ Laptop.(U2)</li>
+																	<li>People who find it hard to keep track of all the procedures.(U1,U2,U3)</li>
+															</ul>
+
+															<p class="mb-2">We identified the different behavioral variables from our interview summaries.</p>
+															<v-img class="mb-4" src="images/behaviorVar.jpg"></v-img>
+
+															<p class="mb-2">We then used points on a scale for each behaviour variable to map the subjects to their behaviour.</p>
+															<v-img class="mb-4" src="images/behaviorMap.jpg"></v-img>
+
+															<h1 class="title font-weight-medium">Identifying significant behavior patterns:</h1>
+															<ul class="mb-4">
+																	<li><em>U1 & U5:</em> they tend to find receiving emails annoying, rarely check their emails, they prefer to access information on the website, they find it easy to navigate the website, they are socially active and get information from other mediums.</li>
+																	<li><em>U3 & U4:</em> they prefer to access information on the website, find keeping track of admission procedures hard, they tend not to be socially active, they often check their emails.</li>
+																	<li><em>U2:</em> they prefer using mobile over PCs/laptops, gets annoyed of receiving too many emails, doesn’t check the emails often, find it hard to access information on the website, prefer to ask someone to get information, they have difficulties in keeping track of their admission procedures.</li>
+															</ul>
+
+															<h1 class="title font-weight-medium">Synthesizing the characteristics and defining goals:</h1>
+
+															<h1 class="subtitle-1 font-weight-medium">Persona 1</h1>
+															<ul class="mb-2" style="list-style-type: disc;">
+																	<li>Demographics:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Age: 19</li>
+																			<li>Gender: Male</li>
+																			<li>School: Rochester Institute of Technology</li>
+																			<li>Major: BS in Packaging Science</li>
+																			<li>International Student</li>
+																			<li>Country: Ethiopia</li>
+																	</ul>
+																	<li>Behavior:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Prefers phone over laptop</li>
+																			<li>Gets annoyed by receiving too many emails</li>
+																			<li>Rarely checks emails</li>
+																			<li>Has a big social circle</li>
+																			<li>Prefers talking to someone over looking through website</li>
+																			<li>Gets confused between multiple points of contact</li>
+																	</ul>
+																	<li>End Goals:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Access information through mobile</li>
+																			<li>Supervise the admission process</li>
+																			<li>Easily find someone with information</li>
+																	</ul>
+																	<li>Experience Goals:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Adapting easily to life in the US</li>
+																			<li>Feel organized</li>
+																	</ul>
+																	<li>Life Goals:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>To be a top-level research specialist</li>
+																			<li>Explore the world</li>
+																	</ul>
+																	<li>Frustration / Pain Points</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Receiving too many emails</li>
+																			<li>Wasting time by searching the required information on the website</li>
+																	</ul>
+															</ul>
+
+															<h1 class="subtitle-1 font-weight-medium">Persona 2</h1>
+															<ul class="mb-2" style="list-style-type: disc;">
+																	<li>Demographics:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Age: 22</li>
+																			<li>Gender: Female</li>
+																			<li>School: Rochester Institute of Technology</li>
+																			<li>Major: MFA in Industrial Design</li>
+																			<li>International Student</li>
+																			<li>Country: India</li>
+																	</ul>
+																	<li>Behavior:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>No preference on phones or laptops</li>
+																			<li>Stays informed by reading through all the emails</li>
+																			<li>Prefers to get information on the website rather than asking someone</li>
+																			<li>Finds it hard to keep track of the admission procedures</li>
+																	</ul>
+																	<li>End Goals:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Efficiently keep track of the progress</li>
+																			<li>Wants to access information without anyone’s help</li>
+																			<li>To grab information easily</li>
+																	</ul>
+																	<li>Experience Goals:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Wants to feel confident</li>
+																			<li>Feel self-sufficient</li>
+																	</ul>
+																	<li>Life Goals:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Wants to own a multinational company</li>
+																			<li>Work towards women empowerment</li>
+																	</ul>
+																	<li>Frustration / Pain Points</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Can’t keep track of admission procedures</li>
+																			<li>Navigating the website is hard</li>
+																			<li>Hard to gather information from verbal conversation</li>
+																	</ul>
+															</ul>
+
+															<h1 class="subtitle-1 font-weight-medium">Persona 3</h1>
+															<ul class="mb-2" style="list-style-type: disc;">
+																	<li>Demographics:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Age: 25</li>
+																			<li>Gender: Male</li>
+																			<li>School: Rochester Institute of Technology</li>
+																			<li>Major: MS in Computer Engineering</li>
+																			<li>International Student</li>
+																			<li>Country: China</li>
+																	</ul>
+																	<li>Behavior:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Finds too many emails annoying</li>
+																			<li>Prefers accessing information from websites</li>
+																			<li>Finds the website informative and easy to navigate</li>
+																			<li>Only checks important emails</li>
+																			<li>Socially active</li>
+																			<li>Values accessing information on the move</li>
+																	</ul>
+																	<li>End Goals:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Access Information easily</li>
+																			<li>Access information on the go</li>
+																			<li>Find information in a single space</li>
+																			<li>Track progress</li>
+																	</ul>
+																	<li>Experience Goals:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Feel in control</li>
+																			<li>Access on different platforms</li>
+																			<li>Minimize point of contacts</li>
+																	</ul>
+																	<li>Life Goals:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Finish school with good grades</li>
+																			<li>Get a good job</li>
+																			<li>Be successful in life</li>
+																	</ul>
+																	<li>Frustration / Pain Points</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Scattered information</li>
+																			<li>Constantly bombarded with information</li>
+																			<li>Don't know the right channel to access information</li>
+																	</ul>
+															</ul>
+
+															<h1 class="subtitle-1 font-weight-medium">Persona 4</h1>
+															<ul class="mb-4" style="list-style-type: disc;">
+																	<li>Demographics:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Age: 29</li>
+																			<li>Gender: Male</li>
+																			<li>School: Rochester Institute of Technology</li>
+																			<li>Major: PhD in Astrophysical Science and Technology</li>
+																			<li>Local Student</li>
+																			<li>Country: United States</li>
+																	</ul>
+																	<li>Behavior:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Goes through every email</li>
+																			<li>Attends all meetings and seminars for students </li>
+																			<li>Is very organized </li>
+																			<li>Keeps track of his progress himself</li>
+																			<li>Opens the website regularly to see new updates</li>
+																			<li>Keeps close contact with faculty and administrative staff</li>
+																			<li>Grew up in Buffalo knows about nearby places</li>
+																	</ul>
+																	<li>End Goals:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Access Information on the go </li>
+																			<li>Get notified when new information is available</li>
+																			<li>Maintain contact with faculty and administration</li>
+																	</ul>
+																	<li>Experience Goals:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Be the first to receive information</li>
+																			<li>Looking for better ways to improve organisation skills </li>
+																	</ul>
+																	<li>Life Goals:</li>
+																	<ul style="list-style-type: circle;">
+																			<li>Become a Professor</li>
+																			<li>Be nationally recognized</li>
+																			<li>Publish several papers</li>
+																			<li>Get funded to carry out groundbreaking research</li>
+																	</ul>
+																	<li>Frustration / Pain Points</li>
+																	<ul style="list-style-type: circle;">
+																			<li>People asking irrelevant questions</li>
+																			<li>Seeing people not being systematic</li>
+																	</ul>
+															</ul>
+
+															<p>After this, we checked for completeness and redundancy in the characteristics of the personas.</p>
+															<p>We then designated each persona to the following types:</p>
+															<ul class="mb-4">
+																	<li>Persona 1- Secondary Persona</li>
+																	<li>Persona 2- Secondary Persona</li>
+																	<li>Persona 3- Primary Persona</li>
+																	<li>Persona 4- Anti-persona</li>
+															</ul>
+
+															<p>Final step was to expand the description of attributes and behaviors of each persona.</p>
+
+														</v-container>
+												</v-card>
+										</v-stepper-content>
+										<v-stepper-content
+												:step="4"
+										>
+												<v-card>
+														<v-container>
+															 Coming Soon...
+														</v-container>
+												</v-card>
+										</v-stepper-content>
+										<v-stepper-content
+												:step="5"
+										>
+												<v-card>
+														<v-container>
+															 Coming Soon...
+														</v-container>
+												</v-card>
+										</v-stepper-content>
+								</v-stepper-items>
+						</v-stepper>
+					</v-container>
+					<v-container>
+							<h1 class="display-2 font-weight-light text-center">Our Team</h1>
+							<v-container class="text-center">
+									<v-row>
+										<v-col>
+												<v-avatar
+														class="profile"
+														color="grey"
+														size="164"
+												>
+														<v-img src="images/andre.jpeg"></v-img>
+												</v-avatar>
+												<v-list-item>
+														<v-list-item-content>
+																<v-list-item-title class="title">Andre Udegbe</v-list-item-title>
+														</v-list-item-content>
+												</v-list-item>
+										</v-col>
+										<v-col>
+												<v-avatar
+														class="profile"
+														color="grey"
+														size="164"
+												>
+														<v-img src="images/manjul.jpg"></v-img>
+												</v-avatar>
+												<v-list-item>
+														<v-list-item-content>
+																<v-list-item-title class="title">Manjul Sachan</v-list-item-title>
+														</v-list-item-content>
+												</v-list-item>
+										</v-col>
+										<v-col>
+												<v-avatar
+														class="profile"
+														color="grey"
+														size="164"
+												>
+														<v-img src="images/nisanth.jpg"></v-img>
+												</v-avatar>
+												<v-list-item>
+														<v-list-item-content>
+																<v-list-item-title class="title">Nisanth Rajavelu</v-list-item-title>
+														</v-list-item-content>
+												</v-list-item>
+										</v-col>
+									</v-row>
+							</v-container>
+					</v-container>
+			</v-content>
+		</v-app>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+	<script>
+		new Vue({
+			el: '#app',
+			vuetify: new Vuetify(),
+		})
+	</script>
 </body>
 </html>
