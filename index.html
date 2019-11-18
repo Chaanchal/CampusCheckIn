@@ -38,7 +38,7 @@
 										step="1"
 										color="cyan lighten-2"
 										>
-										Milestone
+										Project Focus
 										</v-stepper-step>
 						
 										<v-divider></v-divider>
@@ -48,7 +48,7 @@
 										step="2"
 										color="cyan lighten-2"
 										>
-										Milestone
+										Contextual Inquiry
 										</v-stepper-step>
 						
 										<v-divider></v-divider>
@@ -58,7 +58,7 @@
 										editable
 										color="cyan lighten-2"
 										>
-										Milestone
+										Personas
 										</v-stepper-step>
 
 										<v-divider></v-divider>
@@ -68,7 +68,7 @@
 										editable
 										color="cyan lighten-2"
 										>
-										Milestone
+										Lo-Fi Prototype
 										</v-stepper-step>
 
 										<v-divider></v-divider>
@@ -78,7 +78,7 @@
 										editable
 										color="cyan lighten-2"
 										>
-										Milestone
+										Hi-Fi Prototype
 										</v-stepper-step>
 								</v-stepper-header>
 
@@ -1043,7 +1043,141 @@
 										>
 												<v-card>
 														<v-container>
-															 Coming Soon...
+															<h1 class="display-1 font-weight-medium mb-4 text-center">Lo-Fi Prototype</h1>
+
+															<div class="text-center mb-4">
+																<iframe width="640" height="360" src="https://www.youtube.com/embed/5pLqBveAcmc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+															<p>
+																TigerSteps provides step by step instructions needed by international students coming to RIT, to complete the admission process and settle-in easily. This app keeps track of the students’ progress through the admission process and ensures that the necessary information about settling into RIT is properly dissipated to the student. It also helps to minimize the problem of students missing crucial steps required by the administration while going through the admission process.
+															</p>
+															<p>
+																For us to understand the performance of the system design, a usability test was conducted on the prototype. This was done to understand how easy the system was and also to get real-world constraints that may exist for all the stakeholders using TigerSteps.
+															</p>
+
+															<h1 class="headline font-weight-bold mb-2">Planning the prototype:</h1>
+															<p>In the group’s first meeting, we consolidated all the pain points from our personas and came up with the basic hierarchy of the interaction flow.</p>
+															<v-hover>
+																<template v-slot:default="{ hover }">
+																	<v-card :width="expand1 ? '400px' : '200px'">
+																		<v-img class="mb-4" src="images/planning1.jpg"></v-img>
+																		<v-fade-transition>
+																			<v-overlay
+																				v-if="hover"
+																				absolute
+																				color="cyan lighten-2"
+																			>
+																				<v-btn text @click="expand1 = !expand1">Click to {{expand1 ? "shrink" : "expand"}}</v-btn>
+																			</v-overlay>
+																		</v-fade-transition>
+																	</v-card>
+																</template>
+															</v-hover>
+															
+															<p>We identified all the app screens that would be relevant to the problem statement and created a rough sketch for each.</p>
+															<v-hover>
+																<template v-slot:default="{ hover }">
+																	<v-card :width="expand2 ? '800px' : '300px'">
+																		<v-img class="mb-4" src="images/planning2.jpg"></v-img>
+																		<v-fade-transition>
+																			<v-overlay
+																				v-if="hover"
+																				absolute
+																				color="cyan lighten-2"
+																			>
+																				<v-btn text @click="expand2 = !expand2">Click to {{expand2 ? "shrink" : "expand"}}</v-btn>
+																			</v-overlay>
+																		</v-fade-transition>
+																	</v-card>
+																</template>
+															</v-hover>
+
+															<p>We further reiterated the designs and identified the screens we wanted to represent on our low-fidelity prototype.</p>
+
+															<v-row no-gutters>
+																<v-col cols="expand3 ? 6 : 3">
+																	<v-hover>
+																		<template v-slot:default="{ hover }">
+																			<v-card :width="expand3 ? '800px' : '300px'">
+																				<v-img class="mb-4" src="images/planning3.jpg"></v-img>
+																				<v-fade-transition>
+																					<v-overlay
+																						v-if="hover"
+																						absolute
+																						color="cyan lighten-2"
+																					>
+																						<v-btn text @click="expand3 = !expand3">Click to {{expand3 ? "shrink" : "expand"}}</v-btn>
+																					</v-overlay>
+																				</v-fade-transition>
+																			</v-card>
+																		</template>
+																	</v-hover>
+																</v-col>
+																<v-col cols="expand4 ? 6 : 3">
+																	<v-hover>
+																		<template v-slot:default="{ hover }">
+																			<v-card :width="expand4 ? '800px' : '300px'">
+																				<v-img class="mb-4" src="images/planning4.jpg"></v-img>
+																				<v-fade-transition>
+																					<v-overlay
+																						v-if="hover"
+																						absolute
+																						color="cyan lighten-2"
+																					>
+																						<v-btn text @click="expand4 = !expand4">Click to {{expand4 ? "shrink" : "expand"}}</v-btn>
+																					</v-overlay>
+																				</v-fade-transition>
+																			</v-card>
+																		</template>
+																	</v-hover>
+																</v-col>
+																<v-col cols="expand5 ? 6 : 3">
+																	<v-hover>
+																		<template v-slot:default="{ hover }">
+																			<v-card :width="expand5 ? '800px' : '300px'">
+																				<v-img class="mb-4" src="images/planning5.jpg"></v-img>
+																				<v-fade-transition>
+																					<v-overlay
+																						v-if="hover"
+																						absolute
+																						color="cyan lighten-2"
+																					>
+																						<v-btn text @click="expand5 = !expand5">Click to {{expand5 ? "shrink" : "expand"}}</v-btn>
+																					</v-overlay>
+																				</v-fade-transition>
+																			</v-card>
+																		</template>
+																	</v-hover>
+																</v-col>
+																<v-col cols="expand6 ? 6 : 3">
+																	<v-hover>
+																		<template v-slot:default="{ hover }">
+																			<v-card :width="expand6 ? '400px' : '200px'">
+																				<v-img class="mb-4" src="images/planning6.jpg"></v-img>
+																				<v-fade-transition>
+																					<v-overlay
+																						v-if="hover"
+																						absolute
+																						color="cyan lighten-2"
+																					>
+																						<v-btn text @click="expand6 = !expand6">Click to {{expand6 ? "shrink" : "expand"}}</v-btn>
+																					</v-overlay>
+																				</v-fade-transition>
+																			</v-card>
+																		</template>
+																	</v-hover>
+																</v-col>
+															</v-row>
+
+															<h1 class="headline font-weight-bold mb-2">Planning the prototype:</h1>
+															<ul class="mb-2">
+																<li>TigerSteps is designed to be a mobile application for iOS and Android; this was conceived to enable portability and meet with the convenience of accessing the information at any point in time.</li>
+																<li>For this, the prototype consisted of a series of paper cutouts that represented different mobile screens and proposed interactions. </li>
+																<li>The screens were scaled up so that the users would get a good understanding of all the elements and interactions available on the app.</li>
+																<li>A decision was made for all the interactive elements (ike buttons and links) to be represented in <span class="font-weight-bold pink--text text--lighten-1">Pink</span>.</li>
+															</ul>
+
+															<v-img min-width="800px" class="mb-4" src="images/lofi1.jpg"></v-img>
 														</v-container>
 												</v-card>
 										</v-stepper-content>
@@ -1118,6 +1252,16 @@
 		new Vue({
 			el: '#app',
 			vuetify: new Vuetify(),
+			data() {
+				return {
+					expand1: false,
+					expand2: false,
+					expand3: false,
+					expand4: false,
+					expand5: false,
+					expand6: false,
+				}
+			},
 		})
 	</script>
 </body>
