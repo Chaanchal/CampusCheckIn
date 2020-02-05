@@ -17,7 +17,7 @@
 	</style>
 </head>
 <body>
-	<div id="app">
+	<a id="app">
 		<v-app>
 			<v-content>
 					<v-container>
@@ -25,7 +25,7 @@
 								height="300"
 								src="images/issParallax.jpg"
 								>
-								<h1 class="display-3 font-weight-thin mb-4 text-center">Campus CheckIn</h1>
+								<h1 class="display-3 font-weight-thin mb-4 text-center">Tiger Steps</h1>
 								<h4 class="display-1 font-weight-light mb-4 text-center">Project for HCIN-620: Information and Interaction Design</h4>
 						</v-parallax>
 					</v-container>
@@ -1170,24 +1170,306 @@
 															</v-row>
 
 															<h1 class="headline font-weight-bold mb-2">Planning the prototype:</h1>
-															<ul class="mb-2">
+															<ul class="mb-4">
 																<li>TigerSteps is designed to be a mobile application for iOS and Android; this was conceived to enable portability and meet with the convenience of accessing the information at any point in time.</li>
 																<li>For this, the prototype consisted of a series of paper cutouts that represented different mobile screens and proposed interactions. </li>
 																<li>The screens were scaled up so that the users would get a good understanding of all the elements and interactions available on the app.</li>
-																<li>A decision was made for all the interactive elements (ike buttons and links) to be represented in <span class="font-weight-bold pink--text text--lighten-1">Pink</span>.</li>
+																<li>A decision was made for all the interactive elements (like buttons and links) to be represented in <span class="font-weight-bold pink--text text--lighten-1">Pink</span>.</li>
 															</ul>
 
-															<v-img min-width="800px" class="mb-4" src="images/lofi1.jpg"></v-img>
+															<v-img class="mb-1" src="images/lofi1.jpg"></v-img>
+															<p class="text-center mb-4 caption">First design of the lo-fi prototype</p>
+
+															<v-img class="mb-1" src="images/lofi2.jpg"></v-img>
+															<p class="text-center mb-4 caption">Adding flow markers and descriptions (1)</p>
+
+															<v-img class="mb-1" src="images/lofi3.jpg"></v-img>
+															<p class="text-center mb-4 caption">Adding flow markers and descriptions (2)</p>
+
+															<h1 class="headline font-weight-bold mb-2">Usability testing:</h1>
+															<ul class="mb-4">
+																<li>For the usability test, three participants were recruited to interact with the Lo-Fi prototype.</li>
+																<li>Two participants were from the IST department and hence had very good knowledge of developing mobile applications and one participant was from electrical department.</li>
+																<li>All the interviews were conducted in the Library, with a large table that enabled proper interaction with the prototype interface.</li>
+																<li>All the team members were present for the interview and one of them was collecting data from the interview.</li>
+																<li>All the participants were given a brief introduction about the application before interacting with the prototype.</li>
+																<li>After answering the questions that the participants had, they were presented with the prototype and were asked to interact with it.</li>
+																<li>Various nonverbal cues were studied on how they reacted and how long it took to complete a particular task.</li>
+																<li>Once they had gone through the interface, the participants were asked about the ease of completing a task and the clarity of UI.</li>
+															</ul>
+
+															<v-hover>
+																<template v-slot:default="{ hover }">
+																	<v-card :width="expand7 ? '400px' : '200px'">
+																		<v-img class="mb-4" src="images/planning7.jpg"></v-img>
+																		<v-fade-transition>
+																			<v-overlay
+																				v-if="hover"
+																				absolute
+																				color="cyan lighten-2"
+																			>
+																				<v-btn text @click="expand7 = !expand7">Click to {{expand7 ? "shrink" : "expand"}}</v-btn>
+																			</v-overlay>
+																		</v-fade-transition>
+																	</v-card>
+																</template>
+															</v-hover>
+
+															<h1 class="headline font-weight-bold mb-2">Results of usability testing:</h1>
+															<p>Through the user interviews certains gaps were identified in the  flow of user interaction.</p>
+															<ul class="mb-4">
+																<li>Initially the progress bar was made static, but one of the participants mentioned that they would like to see all the pending tasks at one place, which prompted a change to the initial design to provide an expanded list of all the remaining tasks.</li>
+																<li>We were also able to identify the best design for the task details page from the two provided options. Two out of the three participants preferred the full page design as opposed to the pop-up design.</li>
+																<li>All the users faced difficulty in mapping the login page of RIT computer account to the app’s home page, hence the proper connection was added to show the change of screen.</li>
+															</ul>
+
+															<h1 class="headline font-weight-bold mb-2">Final lo-fi prototype:</h1>
+															<v-img class="mb-1" src="images/lofinal.jpg"></v-img>
+
+															<h1 class="headline font-weight-bold mb-2">Breakdown of individual screens:</h1>
+															<ul class="mb-4">
+																<li class="mb-2">The RIT computer account credentials is used as a mode of authentication on the app.</li>
+																<v-hover>
+																	<template v-slot:default="{ hover }">
+																		<v-card :width="expand8 ? '400px' : '200px'">
+																			<v-img class="mb-4" src="images/screen1.jpg"></v-img>
+																			<v-fade-transition>
+																				<v-overlay
+																					v-if="hover"
+																					absolute
+																					color="cyan lighten-2"
+																				>
+																					<v-btn text @click="expand8 = !expand8">Click to {{expand8 ? "shrink" : "expand"}}</v-btn>
+																				</v-overlay>
+																			</v-fade-transition>
+																		</v-card>
+																	</template>
+																</v-hover>
+																<v-hover>
+																	<template v-slot:default="{ hover }">
+																		<v-card :width="expand9 ? '400px' : '200px'">
+																			<v-img class="mb-4" src="images/screen2.jpg"></v-img>
+																			<v-fade-transition>
+																				<v-overlay
+																					v-if="hover"
+																					absolute
+																					color="cyan lighten-2"
+																				>
+																					<v-btn text @click="expand9 = !expand9">Click to {{expand9 ? "shrink" : "expand"}}</v-btn>
+																				</v-overlay>
+																			</v-fade-transition>
+																		</v-card>
+																	</template>
+																</v-hover>
+																<li class="mb-2">For new incoming students, who have not activated their computer account yet, a link to the webpage is provided. The steps required to be able to activate the RIT computer account are listed on the app screen which informs the user, required steps needed to activate the account.</li>
+																<v-hover>
+																	<template v-slot:default="{ hover }">
+																		<v-card :width="expand10 ? '400px' : '200px'">
+																			<v-img class="mb-4" src="images/screen3.jpg"></v-img>
+																			<v-fade-transition>
+																				<v-overlay
+																					v-if="hover"
+																					absolute
+																					color="cyan lighten-2"
+																				>
+																					<v-btn text @click="expand10 = !expand10">Click to {{expand10 ? "shrink" : "expand"}}</v-btn>
+																				</v-overlay>
+																			</v-fade-transition>
+																		</v-card>
+																	</template>
+																</v-hover>
+																<li>Once the RIT computer account is active, the user is taken to the login portal. User’s login credentials will be saved, so that they do not have to login every time they open the app.</li>
+																<li class="mb-2">After logging in, the user arrives at the homepage of the app. They are provided with two options, one for viewing the tasks required to be done before arriving on campus, and another option, similarly for post-arrival. At the bottom of the page there is a progress bar which shows the total number of tasks the user has completed. The hamburger menu presents additional options which might be useful for the user. An option to access the external links to the various services that are available from other RIT resources.</li>
+																<v-hover>
+																	<template v-slot:default="{ hover }">
+																		<v-card :width="expand11 ? '400px' : '200px'">
+																			<v-img class="mb-4" src="images/screen4.jpg"></v-img>
+																			<v-fade-transition>
+																				<v-overlay
+																					v-if="hover"
+																					absolute
+																					color="cyan lighten-2"
+																				>
+																					<v-btn text @click="expand11 = !expand11">Click to {{expand11 ? "shrink" : "expand"}}</v-btn>
+																				</v-overlay>
+																			</v-fade-transition>
+																		</v-card>
+																	</template>
+																</v-hover>
+																<v-hover>
+																	<template v-slot:default="{ hover }">
+																		<v-card :width="expand12 ? '400px' : '200px'">
+																			<v-img class="mb-4" src="images/screen5.jpg"></v-img>
+																			<v-fade-transition>
+																				<v-overlay
+																					v-if="hover"
+																					absolute
+																					color="cyan lighten-2"
+																				>
+																					<v-btn text @click="expand12 = !expand12">Click to {{expand12 ? "shrink" : "expand"}}</v-btn>
+																				</v-overlay>
+																			</v-fade-transition>
+																		</v-card>
+																	</template>
+																</v-hover>
+																<li class="mb-2">The pre-arrival and post-arrival screens present the tasks in a card based format. The cards are ordered according to their relevance, and once a card is marked as done, it moves to the end of the list. Each card contains a short description about the task along with an indication if the task is completed or pending. When the user clicks on a card, they are presented with the full details about the task and an option to mark it as done. If the user wants to undo a task, they can view the task again, and this time they’ll be given the option to undo. </li>
+																<v-hover>
+																	<template v-slot:default="{ hover }">
+																		<v-card :width="expand13 ? '400px' : '200px'">
+																			<v-img class="mb-4" src="images/screen6.jpg"></v-img>
+																			<v-fade-transition>
+																				<v-overlay
+																					v-if="hover"
+																					absolute
+																					color="cyan lighten-2"
+																				>
+																					<v-btn text @click="expand13 = !expand13">Click to {{expand13 ? "shrink" : "expand"}}</v-btn>
+																				</v-overlay>
+																			</v-fade-transition>
+																		</v-card>
+																	</template>
+																</v-hover>
+																<v-hover>
+																	<template v-slot:default="{ hover }">
+																		<v-card :width="expand14 ? '400px' : '200px'">
+																			<v-img class="mb-4" src="images/screen7.jpg"></v-img>
+																			<v-fade-transition>
+																				<v-overlay
+																					v-if="hover"
+																					absolute
+																					color="cyan lighten-2"
+																				>
+																					<v-btn text @click="expand14 = !expand14">Click to {{expand14 ? "shrink" : "expand"}}</v-btn>
+																				</v-overlay>
+																			</v-fade-transition>
+																		</v-card>
+																	</template>
+																</v-hover>
+																<li class="mb-2">We conducted an A/B testing on the task details screen, first presents a separate screen opens up and the other with a pop-up screen on top of the card-view.</li>
+																<v-hover>
+																	<template v-slot:default="{ hover }">
+																		<v-card :width="expand15 ? '400px' : '200px'">
+																			<v-img class="mb-4" src="images/screen8.jpg"></v-img>
+																			<v-fade-transition>
+																				<v-overlay
+																					v-if="hover"
+																					absolute
+																					color="cyan lighten-2"
+																				>
+																					<v-btn text @click="expand15 = !expand15">Click to {{expand15 ? "shrink" : "expand"}}</v-btn>
+																				</v-overlay>
+																			</v-fade-transition>
+																		</v-card>
+																	</template>
+																</v-hover>
+																<v-hover>
+																	<template v-slot:default="{ hover }">
+																		<v-card :width="expand16 ? '400px' : '200px'">
+																			<v-img class="mb-4" src="images/screen9.jpg"></v-img>
+																			<v-fade-transition>
+																				<v-overlay
+																					v-if="hover"
+																					absolute
+																					color="cyan lighten-2"
+																				>
+																					<v-btn text @click="expand16 = !expand16">Click to {{expand16 ? "shrink" : "expand"}}</v-btn>
+																				</v-overlay>
+																			</v-fade-transition>
+																		</v-card>
+																	</template>
+																</v-hover>
+																<li>The users can also search for a particular task from the search bar provided on top of the screen. The user has the ability to access the list of all available tasks from the dropdown menu organised in alphabetical order. Once the user starts typing on the search bar, all the matching tasks appear on the dropdown, and if the user clicks on any one option, it opens up the task details page for that task.</li>
+																<li class="mb-2">The progress bar shows the number of tasks completed in each section for pre arrival and post arrival respectively. Clicking on the bar will pull up a list remaining and completed tasks, belonging to that section. The user can switch between the tabs to see the list of completed tasks.</li>
+																<v-hover>
+																	<template v-slot:default="{ hover }">
+																		<v-card :width="expand17 ? '400px' : '200px'">
+																			<v-img class="mb-4" src="images/screen10.jpg"></v-img>
+																			<v-fade-transition>
+																				<v-overlay
+																					v-if="hover"
+																					absolute
+																					color="cyan lighten-2"
+																				>
+																					<v-btn text @click="expand17 = !expand17">Click to {{expand17 ? "shrink" : "expand"}}</v-btn>
+																				</v-overlay>
+																			</v-fade-transition>
+																		</v-card>
+																	</template>
+																</v-hover>
+																<v-hover>
+																	<template v-slot:default="{ hover }">
+																		<v-card :width="expand18 ? '400px' : '200px'">
+																			<v-img class="mb-4" src="images/screen11.jpg"></v-img>
+																			<v-fade-transition>
+																				<v-overlay
+																					v-if="hover"
+																					absolute
+																					color="cyan lighten-2"
+																				>
+																					<v-btn text @click="expand18 = !expand18">Click to {{expand18 ? "shrink" : "expand"}}</v-btn>
+																				</v-overlay>
+																			</v-fade-transition>
+																		</v-card>
+																	</template>
+																</v-hover>
+																<li class="mb-2">A floating chat button was added on each screen, so that the students can access the chat with their PALs (Peer Advisory Leaders) at any time, and ask them any questions that they have regarding any tasks.</li>
+																<v-hover>
+																	<template v-slot:default="{ hover }">
+																		<v-card :width="expand19 ? '400px' : '200px'">
+																			<v-img class="mb-4" src="images/screen12.jpg"></v-img>
+																			<v-fade-transition>
+																				<v-overlay
+																					v-if="hover"
+																					absolute
+																					color="cyan lighten-2"
+																				>
+																					<v-btn text @click="expand19 = !expand19">Click to {{expand19 ? "shrink" : "expand"}}</v-btn>
+																				</v-overlay>
+																			</v-fade-transition>
+																		</v-card>
+																	</template>
+																</v-hover>
+															</ul>
 														</v-container>
 												</v-card>
 										</v-stepper-content>
 										<v-stepper-content
 												:step="5"
 										>
-												<v-card>
-														<v-container>
-															 Coming Soon...
-														</v-container>
+												<v-card>													
+													<v-container>
+														<h1 class="display-1 font-weight-medium mb-4 text-center">Hi-Fi Prototype</h1>
+
+														<div class="text-center mb-4">
+															<iframe width="400" height="870" src="https://projects.invisionapp.com/prototype/ck3alw70g00eekx015mtudj0h/play" frameborder="0"></iframe>
+														</div>
+
+														<p class="headline font-weight-bold mb-2">Go to Moodboard<v-icon large @click="openMoodboard">mdi-arrow-right-bold</v-icon></p>
+
+														<h1 class="headline font-weight-bold mb-2">Usability Testing</h1>
+														<ul class="mb-4">
+															<li>InVision provides a “Mirror to Device” feature which helped us to perform user testing in a better way.</li>
+															<v-img class="mt-4 mb-4" width="400px" src="images/userTesting1.jpg"></v-img>
+															<li>The user was able to get the app’s prototype on their smartphone by scanning a QR code.</li>
+															<v-img class="mt-4 mb-4" width="400px" src="images/userTesting2.jpg"></v-img>
+															<li>This also enabled the user to interact with the prototype using gestures like “swipe up”, “swipe right” and “swipe left”, which provided the look and feel of the actual app.</li>
+														</ul>
+
+														<h1 class="headline font-weight-bold mb-2">App Screens</h1>
+														<v-row>
+															<v-col
+																v-for="n in 23"
+																:key="n"
+																class="d-flex child-flex"
+																cols="5"
+															>
+																<v-card flat tile class="d-flex">
+																	<v-img width="20px" :src="`images/appScreen${n}.png`"></v-img>
+																</v-card>
+															</v-col>
+														</v-row>
+																																										
+													</v-container>
 												</v-card>
 										</v-stepper-content>
 								</v-stepper-items>
@@ -1260,6 +1542,25 @@
 					expand4: false,
 					expand5: false,
 					expand6: false,
+					expand7: false,
+					expand8: false,
+					expand9: false,
+					expand10: false,
+					expand11: false,
+					expand12: false,
+					expand13: false,
+					expand14: false,
+					expand15: false,
+					expand16: false,
+					expand17: false,
+					expand18: false,
+					expand19: false,
+					url: "https://projects.invisionapp.com/boards/7C3XQL1XEHF/",
+				}
+			},
+			methods: {
+				openMoodboard() {
+					window.open(this.url);
 				}
 			},
 		})
